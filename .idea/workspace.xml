@@ -1,20 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59d7163b-c260-4a3b-a850-ac0e8210508b" name="Default" comment="First Commit of App">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/guide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/notifications.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/related.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Open Data Tool Guideline.docx" afterPath="$PROJECT_DIR$/Open Data Tool Guideline.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+    <list default="true" id="59d7163b-c260-4a3b-a850-ac0e8210508b" name="Default" comment="Missing Static Files Added">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InnovationMaps/static/data/Innovation Maps Guideline.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InnovationMaps/static/img/about.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InnovationMaps/static/data/NABS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InnovationMaps/static/data/OECD.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/registration/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/signup.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InnovationMaps/static/data/nuts1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Open Data Tool Guideline.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0002_auto_20170427_1314.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0003_auto_20170427_1315.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0004_auto_20170427_1318.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0005_auto_20170427_1714.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0006_auto_20170427_1718.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0007_auto_20170427_1719.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/0008_auto_20170427_1753.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/css/footer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/css/header.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/css/layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/H2020.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/ODT.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/OnlineS3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/access-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/background_header.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/eu_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/static/img/logo_adv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/templatetags/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/templatetags/custom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OpenDataTool/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-fp5organizations.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-fp5projects.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-fp6organizations.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-fp6projects.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-fp7briefs.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-fp7organizations.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-fp7projects.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-h2020organizations.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordis-h2020projects.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordisref-H2020programmes.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordisref-H2020topics.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordisref-countries.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordisref-organizationActivityType.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordisref-projectFundingSchemeCategory.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/cordisref-sicCode.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/data/regions.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Anti-Fraud Office.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Central Bank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Commission.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Environment Agency.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Institute for Gender Equality.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Maritime Safety Agency.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Medicines Agency.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Parliament.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Securities and Markets Authority.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/European Training Foundation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/Eurostat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/Joint Research Centre.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/cordisfp5projects.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/cordisfp6projects.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/cordisfp7projects.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/esa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/bookmarks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/notifications.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/projects.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/resource.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/result.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/results.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/OpenDataTool.iml" afterPath="$PROJECT_DIR$/.idea/InnovationMaps.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/6bca2c21-aa02-473a-9593-5bfbac924303.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/6bca2c21-aa02-473a-9593-5bfbac924303.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenDataTool/models.py" afterPath="$PROJECT_DIR$/OpenDataTool/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenDataTool/settings.py" afterPath="$PROJECT_DIR$/OpenDataTool/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenDataTool/urls.py" afterPath="$PROJECT_DIR$/OpenDataTool/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenDataTool/views.py" afterPath="$PROJECT_DIR$/OpenDataTool/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/about.html" afterPath="$PROJECT_DIR$/templates/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/projects.html" afterPath="$PROJECT_DIR$/templates/projects.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/guide.html" afterPath="$PROJECT_DIR$/templates/guide.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/related.html" afterPath="$PROJECT_DIR$/templates/related.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,79 +133,136 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenDataTool/settings.py">
+        <entry file="file://$PROJECT_DIR$/InnovationMaps/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="1020">
+              <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenDataTool/urls.py">
+        <entry file="file://$PROJECT_DIR$/InnovationMaps/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-              <folding>
-                <element signature="e#648#680#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenDataTool/views.py">
+        <entry file="file://$PROJECT_DIR$/InnovationMaps/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="140" column="42" lean-forward="true" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
+            <state relative-caret-position="357">
+              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InnovationMaps/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
               <folding>
-                <element signature="e#584#1014#0" expanded="false" />
-                <element signature="e#1040#1077#0" expanded="false" />
-                <element signature="e#1107#1487#0" expanded="false" />
-                <element signature="e#1515#3759#0" expanded="false" />
-                <element signature="e#3786#3822#0" expanded="false" />
-                <element signature="e#3849#4063#0" expanded="false" />
-                <element signature="e#4092#4130#0" expanded="false" />
-                <element signature="e#11047#13106#0" expanded="false" />
-                <element signature="e#13148#16115#0" expanded="false" />
-                <element signature="e#16147#18721#0" expanded="false" />
+                <element signature="e#5498#5504#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenDataTool_project" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/67a04cb/6bca2c21-aa02-473a-9593-5bfbac924303/OpenDataTool_project">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/about.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projects.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/projects.html">
+      <file leaf-file-name="guide.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/guide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="377" column="59" lean-forward="false" selection-start-line="377" selection-start-column="59" selection-end-line="377" selection-end-column="59" />
+            <state relative-caret-position="267">
+              <caret line="135" column="51" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="51" />
+              <folding>
+                <element signature="e#1248#1277#0#HTML" expanded="true" />
+                <element signature="e#1558#1578#0#HTML" expanded="true" />
+                <element signature="e#2016#2045#0#HTML" expanded="true" />
+                <element signature="e#3563#3588#0#HTML" expanded="true" />
+                <element signature="e#4085#4105#0#HTML" expanded="true" />
+                <element signature="e#4532#4552#0#HTML" expanded="true" />
+                <element signature="e#4849#4869#0#HTML" expanded="true" />
+                <element signature="e#5421#5441#0#HTML" expanded="true" />
+                <element signature="e#5624#5644#0#HTML" expanded="true" />
+                <element signature="e#5926#5946#0#HTML" expanded="true" />
+                <element signature="e#6299#6319#0#HTML" expanded="true" />
+                <element signature="e#6434#6440#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="related.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/related.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-566">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifications.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/notifications.html">
+      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="646">
+              <caret line="369" column="33" lean-forward="true" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
+              <folding>
+                <element signature="n#block#0;n#!!top" expanded="false" />
+                <element signature="e#12210#12236#0#HTML" expanded="true" />
+                <element signature="e#12515#12541#0#HTML" expanded="true" />
+                <element signature="e#12827#12853#0#HTML" expanded="true" />
+                <element signature="e#13002#13021#0#HTML" expanded="true" />
+                <element signature="e#15370#15391#0#HTML" expanded="true" />
+                <element signature="e#15392#15398#0#HTML" expanded="true" />
+                <element signature="e#15398#15404#0#HTML" expanded="true" />
+                <element signature="e#15463#15484#0#HTML" expanded="true" />
+                <element signature="e#15512#15518#0#HTML" expanded="true" />
+                <element signature="e#15518#15524#0#HTML" expanded="true" />
+                <element signature="e#15773#15805#0#HTML" expanded="true" />
+                <element signature="e#16133#16155#0#HTML" expanded="true" />
+                <element signature="e#16417#16437#0#HTML" expanded="true" />
+                <element signature="e#16950#16970#0#HTML" expanded="true" />
+                <element signature="e#17041#17092#0#HTML" expanded="true" />
+                <element signature="e#17180#17206#0#HTML" expanded="true" />
+                <element signature="e#17344#17350#0#HTML" expanded="true" />
+                <element signature="e#17605#17631#0#HTML" expanded="true" />
+                <element signature="e#17789#17815#0#HTML" expanded="true" />
+                <element signature="e#18270#18276#0#HTML" expanded="true" />
+                <element signature="e#19577#19603#0#HTML" expanded="true" />
+                <element signature="e#20597#20616#0#HTML" expanded="true" />
+                <element signature="e#21211#21232#0#HTML" expanded="true" />
+                <element signature="e#21841#21896#0#HTML" expanded="true" />
+                <element signature="e#22071#22091#0#HTML" expanded="true" />
+                <element signature="e#22284#22303#0#HTML" expanded="true" />
+                <element signature="e#22835#22874#0#HTML" expanded="true" />
+                <element signature="e#23290#23326#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,37 +272,45 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>trim</find>
-      <find>up</find>
-      <find>log</find>
-      <find>q_context</find>
-      <find>context</find>
-      <find>qContext</find>
-      <find>sort by</find>
-      <find>access t</find>
+      <find>get</find>
+      <find>row</find>
+      <find>filterVal</find>
+      <find>filter</find>
+      <find>replace</find>
+      <find>embbe</find>
       <find>console</find>
-      <find>strong</find>
-      <find>times</find>
-      <find>id</find>
-      <find>updateBookmark</find>
       <find>filters</find>
-      <find>print</find>
-      <find>sup</find>
-      <find>org</find>
-      <find>Consortium</find>
-      <find>PASS</find>
-      <find>738002</find>
-      <find>EN</find>
-      <find>notifications</find>
-      <find>project</find>
+      <find>remove</find>
+      <find>filter-</find>
+      <find>toggle</find>
+      <find>console.log</find>
+      <find>oClass</find>
+      <find>overlay</find>
+      <find>exitFullscreen</find>
+      <find>Data Manipulation</find>
+      <find>jExcel</find>
+      <find>TODO</find>
+      <find>h2</find>
+      <find>OK</find>
+      <find>intel</find>
+      <find>Read More</find>
+      <find>href=</find>
+      <find>onchange</find>
+      <find>columns</find>
+      <find>jexcel</find>
+      <find>embed</find>
+      <find>console.</find>
+      <find>login</find>
+      <find>regions</find>
     </findStrings>
     <replaceStrings>
       <replace>queryContext</replace>
@@ -181,43 +322,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/current_datetime.html" />
-        <option value="$PROJECT_DIR$/templates/repositories.html" />
-        <option value="$PROJECT_DIR$/templates/page.html" />
-        <option value="$PROJECT_DIR$/templates/result.html" />
-        <option value="$PROJECT_DIR$/static/data/regions.txt" />
-        <option value="$PROJECT_DIR$/static/data/regions.csv" />
-        <option value="$PROJECT_DIR$/templates/resource.html" />
-        <option value="$PROJECT_DIR$/templates/search.html" />
-        <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/static/layout.css" />
-        <option value="$PROJECT_DIR$/static/header.css" />
-        <option value="$PROJECT_DIR$/static/footer.css" />
-        <option value="$PROJECT_DIR$/static/css/header.css" />
-        <option value="$PROJECT_DIR$/static/css/layout.css" />
-        <option value="$PROJECT_DIR$/templates/results.html" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/templatetags/split.py" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/template_tags/split.py" />
-        <option value="$PROJECT_DIR$/templates/bookmarks.html" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/templatetags/custom.py" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/test.py" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/populate.py" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/urls.py" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/settings.py" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/models.py" />
-        <option value="dbtable:/e1197814/6bca2c21-aa02-473a-9593-5bfbac924303/OnlineDataTool_organisation" />
-        <option value="$PROJECT_DIR$/OnlineDataTool/views.py" />
-        <option value="$PROJECT_DIR$/OpenDataTool/settings.py" />
-        <option value="$PROJECT_DIR$/templates/usecases.html" />
-        <option value="$PROJECT_DIR$/templates/about.html" />
-        <option value="$PROJECT_DIR$/templates/related.html" />
-        <option value="$PROJECT_DIR$/templates/guide.html" />
-        <option value="$PROJECT_DIR$/OpenDataTool/models.py" />
-        <option value="$PROJECT_DIR$/OpenDataTool/urls.py" />
+        <option value="$PROJECT_DIR$/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/templates/signup.html" />
         <option value="$PROJECT_DIR$/templates/notifications.html" />
+        <option value="$PROJECT_DIR$/OpenDataTool/static/css/other.css" />
+        <option value="$PROJECT_DIR$/static/css/utils.css" />
+        <option value="C:/Python27/Lib/site-packages/plotly/figure_factory/_gantt.py" />
+        <option value="$PROJECT_DIR$/OpenDataTool/templatetags/custom.py" />
+        <option value="$PROJECT_DIR$/OpenDataTool/forms.py" />
+        <option value="$PROJECT_DIR$/templates/explorer2.html" />
+        <option value="$PROJECT_DIR$/OpenDataTool/static/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/search2.html" />
         <option value="$PROJECT_DIR$/templates/projects.html" />
+        <option value="$PROJECT_DIR$/templates/organisations.html" />
+        <option value="$PROJECT_DIR$/templates/explorer.html" />
+        <option value="$PROJECT_DIR$/templates/search.html" />
+        <option value="$PROJECT_DIR$/templates/results.html" />
+        <option value="$PROJECT_DIR$/OpenDataTool/settings.py" />
+        <option value="$PROJECT_DIR$/OpenDataTool/wsgi.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/OpenDataTool/models.py" />
         <option value="$PROJECT_DIR$/OpenDataTool/views.py" />
+        <option value="$PROJECT_DIR$/OpenDataTool/urls.py" />
+        <option value="$PROJECT_DIR$/InnovationMaps/forms.py" />
+        <option value="$PROJECT_DIR$/static/data/OECD.csv" />
+        <option value="$PROJECT_DIR$/static/data/NABS.csv" />
+        <option value="$PROJECT_DIR$/InnovationMaps/static/data/NABS.csv" />
+        <option value="$PROJECT_DIR$/InnovationMaps/static/data/OECD.csv" />
+        <option value="$PROJECT_DIR$/templates/app.html" />
+        <option value="$PROJECT_DIR$/static/data/region.csv" />
+        <option value="$PROJECT_DIR$/templates/map2.html" />
+        <option value="$PROJECT_DIR$/InnovationMaps/static/data/nuts1.csv" />
+        <option value="$PROJECT_DIR$/InnovationMaps/static/data/region.csv" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/InnovationMaps/models.py" />
+        <option value="$PROJECT_DIR$/../../balancedscorecard/balancedscorecard/innovationmaps/templates/about.html" />
+        <option value="$PROJECT_DIR$/InnovationMaps/static/data/regions.csv" />
+        <option value="$PROJECT_DIR$/InnovationMaps/views.py" />
+        <option value="$PROJECT_DIR$/InnovationMaps/settings.py" />
+        <option value="$PROJECT_DIR$/InnovationMaps/templatetags/custom.py" />
+        <option value="$PROJECT_DIR$/InnovationMaps/wsgi.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/templates/about.html" />
+        <option value="$PROJECT_DIR$/templates/about.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/guide.html" />
+        <option value="$PROJECT_DIR$/templates/guide.html" />
+        <option value="$PROJECT_DIR$/templates/related.html" />
+        <option value="$PROJECT_DIR$/templates/related.html" />
+        <option value="$PROJECT_DIR$/InnovationMaps/urls.py" />
+        <option value="$PROJECT_DIR$/templates/map.html" />
       </list>
     </option>
   </component>
@@ -228,10 +383,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="2902" />
-    <option name="height" value="1582" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -249,74 +404,137 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenDataTool" />
+              <option name="myItemId" value="InnovationMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenDataTool" />
+              <option name="myItemId" value="InnovationMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenDataTool" />
+              <option name="myItemId" value="InnovationMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenDataTool" />
+              <option name="myItemId" value="InnovationMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenDataTool" />
+              <option name="myItemId" value="InnovationMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenDataTool" />
+              <option name="myItemId" value="InnovationMaps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenDataTool" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationMaps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Calls Consultation Potential Apps/steel-rumors-episode4" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="SearchEverywhereHistoryKey" value="settings&#9;ACTION&#9;Database.Settings&#10;plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OpenDataTool\templates" />
-      <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OpenDataTool\OpenDataTool\static\img" />
-      <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OnlineDataTool\OnlineDataTool\template_tags" />
-      <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OnlineDataTool\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryan Faulkner\Desktop\Online S3\InnovationMaps\static\map" />
+      <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OpenDataTool" />
+      <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OpenDataTool\static" />
       <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OnlineDataTool\static\css" />
       <recent name="C:\Users\Ryan Faulkner\Documents\Online S3\Applications\OnlineDataTool\static\img" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryan Faulkner\Desktop\Online S3\InnovationMaps\InnovationMaps\static\img" />
+      <recent name="C:\Users\Ryan Faulkner\Desktop\Online S3\InnovationMaps\static\data" />
+      <recent name="C:\Users\Ryan Faulkner\Desktop\Online S3\InnovationMaps\InnovationMaps\static\data" />
+      <recent name="C:\Users\Ryan Faulkner\Desktop\Online S3\InnovationMaps\InnovationMaps" />
+      <recent name="C:\Users\Ryan Faulkner\Desktop\Online S3\InnovationMaps\InnovationMaps\static" />
+    </key>
   </component>
-  <component name="RunManager" selected="Django server.OpenDataTool">
+  <component name="RunManager" selected="Django server.InnovationMaps">
     <configuration default="false" name="Test: OpenDataTool" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -628,19 +846,19 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="OpenDataTool" type="Python.DjangoServer" factoryName="Django server">
+    <configuration default="false" name="InnovationMaps" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="OpenDataTool.settings" />
+        <env name="DJANGO_SETTINGS_MODULE" value="InnovationMaps.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OpenDataTool" />
+      <module name="InnovationMaps" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -653,7 +871,7 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Django server.OpenDataTool" />
+      <item index="0" class="java.lang.String" itemvalue="Django server.InnovationMaps" />
       <item index="1" class="java.lang.String" itemvalue="Django tests.Test: OpenDataTool" />
       <item index="2" class="java.lang.String" itemvalue="Python.test" />
       <item index="3" class="java.lang.String" itemvalue="Python.populate" />
@@ -689,7 +907,28 @@
       <option name="project" value="LOCAL" />
       <updated>1493395906479</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Backend DB integration">
+      <created>1495112246009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495112246010</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Missing Static Files Added">
+      <created>1495116013174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495116013174</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Missing Static Files Added">
+      <created>1495116252731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495116252731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -698,29 +937,31 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="2902" height="1582" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31078225" sideWeight="0.50572914" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48305085" sideWeight="0.49427083" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@InnovationMaps" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2780127" sideWeight="0.5171875" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21458773" sideWeight="0.4828125" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14739583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@OpenDataTool" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22410148" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@OpenDataTool" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30232558" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="manage.py@OnlineDataTool" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,17 +972,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit of App" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit of App" />
+    <MESSAGE value="Backend DB integration" />
+    <MESSAGE value="Missing Static Files Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Missing Static Files Added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/projects.html</url>
-          <line>377</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -752,242 +988,160 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/results.html">
+    <entry file="file://$PROJECT_DIR$/templates/search.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/esa.png" />
+    <entry file="jar://C:/Python27/Lib/site-packages/gtr-0.0.1-py2.7.egg!/gtr/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/settings.py">
+    <entry file="file://C:/Python27/Lib/site-packages/gtr-0.1.1-py2.7.egg/gtr/services/funds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="218">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/data/region.csv" />
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/data/nuts1.csv" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#648#680#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2055">
+          <caret line="591" column="16" lean-forward="false" selection-start-line="591" selection-start-column="16" selection-end-line="591" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/app.html" />
+    <entry file="file://$PROJECT_DIR$/templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/templates/map2.html" />
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-          <folding>
-            <element signature="e#584#1014#0" expanded="false" />
-            <element signature="e#1040#1077#0" expanded="false" />
-            <element signature="e#1107#1487#0" expanded="false" />
-            <element signature="e#1515#3759#0" expanded="false" />
-            <element signature="e#3786#3822#0" expanded="false" />
-            <element signature="e#3849#4063#0" expanded="false" />
-            <element signature="e#4092#4130#0" expanded="false" />
-            <element signature="e#11047#13106#0" expanded="false" />
-            <element signature="e#13148#16115#0" expanded="false" />
-            <element signature="e#16147#18721#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/results.html">
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="237">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="36" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="101" column="7" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/data/regions.txt" />
-    <entry file="file://$PROJECT_DIR$/static/data/regions.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/resource.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1230">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/background.png">
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/about.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="69" column="11" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1989">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1958">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/data/cordis-h2020projects.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/regions.csv" />
-    <entry file="file://$PROJECT_DIR$/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-927">
-          <caret line="89" column="19" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="89" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/cordisfp7projects.png">
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/access-icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/H2020.png">
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/background.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/data/cordisref-countries.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/data/cordis-h2020organizations.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bookmarks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/cordisfp5projects.png">
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/logo_adv.png" />
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c12a8c9c-a2c8-4862-a2ba-9d0e40f239d6/console.sql">
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/eu_logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/img/OnlineS3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/data/mapping.csv" />
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/data/NABS.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineDataTool/populate.py" />
-    <entry file="dbDummy://dbtable:/e1197814/6bca2c21-aa02-473a-9593-5bfbac924303/django_migrations" />
-    <entry file="dbDummy://dbtable:/e1197814/6bca2c21-aa02-473a-9593-5bfbac924303/OnlineDataTool_project" />
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/data/OECD.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/data/region.csv" />
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/forms.py" />
+    <entry file="file://$PROJECT_DIR$/changelog.txt" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="5" column="67" lean-forward="false" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e1197814/6bca2c21-aa02-473a-9593-5bfbac924303/OnlineDataTool_organisation" />
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/templatetags/custom.py">
+    <entry file="file://$PROJECT_DIR$/../../balancedscorecard/balancedscorecard/swot/templates/swot/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="-170">
+          <caret line="65" column="99" lean-forward="true" selection-start-line="65" selection-start-column="99" selection-end-line="65" selection-end-column="99" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/67a04cb/6bca2c21-aa02-473a-9593-5bfbac924303/OnlineDataTool_organisation">
+    <entry file="file://$PROJECT_DIR$/../../balancedscorecard/balancedscorecard/innovationmaps/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/static/data/regions.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data/regions.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data/NABS.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data/OECD.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../OpenDataTool/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/433cd072/6bca2c21-aa02-473a-9593-5bfbac924303/InnovationMaps_funder">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -996,142 +1150,190 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/433cd072/6bca2c21-aa02-473a-9593-5bfbac924303/InnovationMaps_project">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/433cd072/6bca2c21-aa02-473a-9593-5bfbac924303/InnovationMaps_organisation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/templatetags/custom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="160" lean-forward="false" selection-start-line="1" selection-start-column="160" selection-end-line="1" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1975">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/67a04cb/6bca2c21-aa02-473a-9593-5bfbac924303/OnlineDataTool_project">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+          <folding>
+            <element signature="e#5498#5504#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/related.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="-566">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InnovationMaps/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="369" column="33" lean-forward="true" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
+          <folding>
+            <element signature="n#block#0;n#!!top" expanded="false" />
+            <element signature="e#12210#12236#0#HTML" expanded="true" />
+            <element signature="e#12515#12541#0#HTML" expanded="true" />
+            <element signature="e#12827#12853#0#HTML" expanded="true" />
+            <element signature="e#13002#13021#0#HTML" expanded="true" />
+            <element signature="e#15370#15391#0#HTML" expanded="true" />
+            <element signature="e#15392#15398#0#HTML" expanded="true" />
+            <element signature="e#15398#15404#0#HTML" expanded="true" />
+            <element signature="e#15463#15484#0#HTML" expanded="true" />
+            <element signature="e#15512#15518#0#HTML" expanded="true" />
+            <element signature="e#15518#15524#0#HTML" expanded="true" />
+            <element signature="e#15773#15805#0#HTML" expanded="true" />
+            <element signature="e#16133#16155#0#HTML" expanded="true" />
+            <element signature="e#16417#16437#0#HTML" expanded="true" />
+            <element signature="e#16950#16970#0#HTML" expanded="true" />
+            <element signature="e#17041#17092#0#HTML" expanded="true" />
+            <element signature="e#17180#17206#0#HTML" expanded="true" />
+            <element signature="e#17344#17350#0#HTML" expanded="true" />
+            <element signature="e#17605#17631#0#HTML" expanded="true" />
+            <element signature="e#17789#17815#0#HTML" expanded="true" />
+            <element signature="e#18270#18276#0#HTML" expanded="true" />
+            <element signature="e#19577#19603#0#HTML" expanded="true" />
+            <element signature="e#20597#20616#0#HTML" expanded="true" />
+            <element signature="e#21211#21232#0#HTML" expanded="true" />
+            <element signature="e#21841#21896#0#HTML" expanded="true" />
+            <element signature="e#22071#22091#0#HTML" expanded="true" />
+            <element signature="e#22284#22303#0#HTML" expanded="true" />
+            <element signature="e#22835#22874#0#HTML" expanded="true" />
+            <element signature="e#23290#23326#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/guide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="112" column="12" lean-forward="false" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/67a04cb/6bca2c21-aa02-473a-9593-5bfbac924303/django_session">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/67a04cb/6bca2c21-aa02-473a-9593-5bfbac924303/OpenDataTool_organisation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="267">
+          <caret line="135" column="51" lean-forward="true" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="51" />
           <folding>
-            <element signature="e#0#28#0" expanded="false" />
+            <element signature="e#1248#1277#0#HTML" expanded="true" />
+            <element signature="e#1558#1578#0#HTML" expanded="true" />
+            <element signature="e#2016#2045#0#HTML" expanded="true" />
+            <element signature="e#3563#3588#0#HTML" expanded="true" />
+            <element signature="e#4085#4105#0#HTML" expanded="true" />
+            <element signature="e#4532#4552#0#HTML" expanded="true" />
+            <element signature="e#4849#4869#0#HTML" expanded="true" />
+            <element signature="e#5421#5441#0#HTML" expanded="true" />
+            <element signature="e#5624#5644#0#HTML" expanded="true" />
+            <element signature="e#5926#5946#0#HTML" expanded="true" />
+            <element signature="e#6299#6319#0#HTML" expanded="true" />
+            <element signature="e#6434#6440#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="377" column="59" lean-forward="false" selection-start-line="377" selection-start-column="59" selection-end-line="377" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/67a04cb/6bca2c21-aa02-473a-9593-5bfbac924303/OpenDataTool_project">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="140" column="42" lean-forward="true" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
-          <folding>
-            <element signature="e#584#1014#0" expanded="false" />
-            <element signature="e#1040#1077#0" expanded="false" />
-            <element signature="e#1107#1487#0" expanded="false" />
-            <element signature="e#1515#3759#0" expanded="false" />
-            <element signature="e#3786#3822#0" expanded="false" />
-            <element signature="e#3849#4063#0" expanded="false" />
-            <element signature="e#4092#4130#0" expanded="false" />
-            <element signature="e#11047#13106#0" expanded="false" />
-            <element signature="e#13148#16115#0" expanded="false" />
-            <element signature="e#16147#18721#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenDataTool/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="e#648#680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>

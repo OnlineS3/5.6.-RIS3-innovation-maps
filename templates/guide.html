@@ -1,162 +1,193 @@
-<!doctype html>
-<html class="no-js" lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="x-ua-compatible" content="ie=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Open Data Tool Application</title>
-    {% load static %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="{% static "css/layout.css" %}"/>
-	<link rel="stylesheet" href="{% static "css/header.css" %}"/>
-	<link rel="stylesheet" href="{% static "css/footer.css" %}"/>
-</head>
-
-<body>
-
-<div id="page">
-
-<div id="mainpage" class="site">
-
-<!-- site header -->
-<header id='site-header'>
-
-	<nav id='top-menu'>
-		<ul>
-			<li><a href='http://www.onlines3.eu/'>Online S3 Project</a></li>
-			<li class="active"><a href='#'><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Applications</a></li>
-			<li><a href='#'><i class="fa fa-cog" aria-hidden="true"></i>Toolbox</a></li>
-			<li><a href='#'><i class="fa fa-bar-chart" aria-hidden="true"></i>Analytics</a></li>
-			<li><a href='#'><i class="fa fa-life-ring" aria-hidden="true"></i></i>Support</a></li>
-			<li><a href='#'><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
-		</ul>
-	</nav>
-
-	<div id='header-main'>
-
-		<div class='top-section'>
-			<div class='headers'>
-				<img class='logo-img' src="{% static 'img/logo.png' %}" width='77'>
-				<div>
-					<p class="heading"><a href='#'>Online S3 Platform</a></p>
-					<p class="sub-heading">RIS3 Open Data Tool</p>
-				</div>
-			</div>
-
-			<div class="social-links">
-				<a href="https://twitter.com/online_s3" title="Twitter" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-				<a href="https://plus.google.com/102042915278982824881" title="Google+" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-				<a href="https://www.youtube.com/channel/UCuYNnd9rdrN_EbF5_P0Nmog" title="YouTube" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-				<!-- <a href="https://twitter.com/online_s3" title="Twitter" target="_blank">L</a>  -->
-				<!-- <a href="https://plus.google.com/102042915278982824881" title="Google+" target="_blank">G</a>  -->
-				<!-- <a href="https://www.youtube.com/channel/UCuYNnd9rdrN_EbF5_P0Nmog" title="YouTube" target="_blank">X</a>  -->
-				<!-- <a href="http://www.onlines3.eu/feed/" title="Newsfeed" target="_blank">R</a> -->
-			</div>
-		</div>
-
-		<div class='bottom-section'>
-			<div class="menu">
-				<ul>
-					<li><a href="/about/">About</a></li>
-					<li><a href="/guide/">Guide</a></li>
-					<li><a href="/related/">Related Documents</a></li>
-					<li><a id='tool' href='/projects/'>Access to application</a></li>
-				</ul>
-			</div>
-
-			<div class='user-btns'>
-				<button class='login-btn'> Sign in </button>
-				<button class='register-btn'> Sign up </button>
-			</div>
-		</div>
-
-	</div>
-
-	<div id='breadcrumb'>
-		<ul>
-			<li><a href='http://www.s3platform.eu/'>Online S3 Platform</a></li>
-			<li><a href='http://www.s3platform.eu/applications/5-policy-mix/'>Policy Mix</a></li>
-			<li><span>RIS3 Open Data Tool</span></li>
-		</ul>
-	</div>
-
-</header>
-<!-- site header -->
+{% block addHead %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+ <style>
+    .pagetitle {
+        margin: 0;
+        color: #de1515;
+        padding: 1rem 0 0rem 1rem;
+        font-style: normal;
+        font-weight: 400;
+        clear: both;
+        font-size: 21px;
+        font-family: tahoma
+    }
+    </style>
+{% endblock %}
 
 <!-- Application's space -->
+{% block content %}
 <div class="site-content">
 
 	<article id="main-content">
 
-		<h2>Guide</h2>
+		<h2 class="pagetitle">Guide</h2>
+
 		<p>
-            <strong>Step 1: </strong>Define a search term concerning one of the following properties of the projects in interest:
-            <ul>
-                <li>Project Title, Acronym, ID, Objective</li>
-                <li>Coordinator, Country of Origin</li>
-                <li>Call, Programme, Funding Scheme</li>
+            <strong>Step 1. a: </strong>Data Gathering<br/>
+            A prerequisite to the use of this application is the availability of grant data concerning innovative
+            programmes implemented across numerous regions.
+            Data sources may include regional research councils or funding providers such as
+            the Gateway to Research (GtR) in the UK and Tekes in Finland. Export relevant data
+            from these providers in csv format for upload to the application. Options to import data include:
+            <ul style="list-style-type: disc">
+                <li>File upload: Import a csv file</li>
+                <li>Manual Data Entry: Define headers and copy data into an online spreadsheet</li>
             </ul>
-            <br/>
+        </p>
+        <div class="img-container">
+            <img src="{% static "img/im_Step-1.png" %}" style="width: 620px"/>
+        </div>
+        <p class="img-caption">Figure 1a: Data selection and upload</p>
 
-            <strong>Step 2: </strong>Select frameworks, filters and sorting parameters to refine the search further to narrow down on projects of interest.
-            <br/>
+        <p>
+            <strong>Step 1. b: </strong>Data Specification<br/>
+            Selection of appropriate fields and the definition of a method of classification, by business area and technology area. <br/>
+            At this stage it is required to specify the relevant columns containing essential information including:
+            <ul style="list-style-type: disc">
+                <li>Region</li>
+                <li>Funding</li>
+                <li>Business Area</li>
+                <li>Technology Classification</li>
+            </ul>
+            <p>
+                <i>NOTE: It is possible to create new columns for manual data entry should this data not be available.</i>
+            </p>
+            The OECD and NABS standards are built-in to the application and are used as standard however the user may specify a custom classification method.
+            In order to use a custom classification two additional csv files are required to be uploaded which contain:
 
-            <strong>Step 3: </strong>Explore the search results concerning projects and participating organisations.
-            <br/>
+            <table class="table table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Contents</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>"chapter"</td>
+                        <td>Label</td>
+                        <td>1.1.</td>
+                    </tr>
+                    <tr>
+                        <td>"topic"</td>
+                        <td>Title</td>
+                        <td>Mathematics</td>
+                    </tr>
+                    <tr>
+                        <td>"category" *</td>
+                        <td>Hierarchy</td>
+                        <td>Natural Sciences</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <strong>Step 4: </strong>Select a project to get more information concerning the consortium and breakdown.
-            <br/>
+            <p style="text-align: right">* optional</p>
 
-            <strong>Step 5: </strong>Save projects to the bookmark panel for ease-of-access at a later stage.
-            <br/>
+            <p>
+                Read more concerning classification methods <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM&StrGroupCode=CLASSIFIC&StrLanguageCode=EN">here</a>.<br/>
+                <i>Note: The use of standard classifications is encouraged to allow for cross-regional and cross-country comparisons.</i>
+            </p>
+        </p>
+        <div class="img-container">
+            <img src="{% static "img/im_Step-2.png" %}" style="width: 620px"/>
+        </div>
+        <p class="img-caption">Figure 1b: Data import and parsing. </p>
+
+        <hr/>
+
+        <p>
+            <strong>Step 2: </strong>Data Cleansing and Classification<br/>
+        </p>
+        <p>
+            Imported data will appear in the online spreadsheet where it can modified and manipulated.
+        </p>
+        <div class="img-container">
+            <img src="{% static "img/im_Step-3.png" %}" style="width: 620px"/>
+        </div>
+        <p class="img-caption">Figure 2: Imported data</p>
+
+        <p>
+            Classify grant data by business and technology area using the provided drop down menus.
+        </p>
+        <div class="img-container">
+            <img src="{% static "img/im_Step-3.1.png" %}" style="width: 440px"/>
+        </div>
+        <p class="img-caption">Figure 2: Classification of project data</p>
+
+        <hr/>
+
+        <p>
+            <strong>Step 3: </strong>Data Visualisation, Analysis and Policy Intelligence <br/>
+            Visualise the data in order to analyse trends concerning regional smart specialisation priorities.
+            Build and apply filters concerning any column in order to fine-tune the analysis; E.g. filter by Region.
+        </p>
+
+        <div class="img-container">
+            <img src="{% static "img/im_Step-4.png" %}" style="width: 620px"/>
+        </div>
+        <p class="img-caption">Figure 3a: Bubble Map Visualisation</p>
+
+        <div class="img-container">
+            <img src="{% static "img/im_Step-4a.png" %}" style="width: 620px"/>
+        </div>
+        <p class="img-caption">Figure 3a: Heatmap Visualisation</p>
+
+        <p>
+            Construct filters in order to refine the scope of the analysis.
+        </p>
+        <div class="img-container">
+            <img src="{% static "img/im_Step-4.1.png" %}" style="width: 620px"/>
+        </div>
+        <p class="img-caption">Figure 3b: Filter Application</p>
+
+        <hr/>
+
+        <p>
+            <strong>Step 4: </strong>Plotting Options and Data Export <br/>
+            Adjust and save the underlying data and figures.
+        </p>
+        <div class="img-container">
+            <img src="{% static "img/im_Step-5.png" %}" style="width: 480px"/>
+        </div>
+        <p class="img-caption">Figure 3a: Adjusting settings and Export options</p>
+
+        <h5>&emsp;Options</h5>
+        <ul>
+            <li><i class="fa fa-cogs"></i> Modify Settings: Adjust column selection and change classification method</li>
+            <li><i class="fa fa-table"></i> Column: Select a column in order to change the header title</li>
+            <li><i class="fa fa-plus-circle"></i> Insert: Add a new column </li>
+            <li><i class="fa fa-font"></i> Title: Change the plot title and file name for export</li>
+            <li><i class="fa fa-picture-o"></i> Format: Change the Image type for export - png, jpeg, webp or svg</li>
+            <li><i class="fa fa-table"></i> Data: Chose to plot project count or funding</li>
+            <li><i class="fa fa-search"></i> Scale: Adjust the bubble size for improved comparison</li>
+            <li><i class="fa fa-filter"></i> Filter: Construct filter by selecting a column and desired values</li>
+        </ul>
+
+        <p>
+            <strong>Step 5. </strong>Policy Intelligence <br/>
+            Analyse the data visualised by the app; for example: Identify regional strengths and concentrations of
+            innovation activities using Heatmap plots with regional filter or Bubble maps with classification filters.
+            Monitor Business and Technology Trends by iteratively filtering by dates provided.
         </p>
 
 	</article>
 
+
 	<aside id='sidebar'>
-        <a href="/guide/" target="_blank">
+        <a href='{% url "innovationmaps_pdf" %}' target="_blank">
 		    <button class="alt"> Download Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
         </a>
 		<div></div>
-        <a href="/projects/">
+        <a href='{% url "innovationmaps_map" %}'>
 		    <button> Access to application  <img src="{% static 'img/access-icon.png' %}" width="20"></button>
         </a>
 	</aside>
 
 </div>
 <!-- Application's space -->
-
-<!-- site footer -->
-<footer id='site-footer'>
-
-	<div id="footer-links">
-        <ul>
-            <li><a href="#"><span>Online S3 Project</span></a></li>
-            <li class="active"><a href="#"><span>Applications</span></a></li>
-            <li><a href="#"><span>Toolbox</span></a></li>
-            <li><a href="#"><span>Analytics</span></a></li>
-            <li><a href="#"><span>Support</span></a></li>
-            <li><a href="#"><span>Contact</span></a></li>
-        </ul>
-        <div id='copyright'>
-            <img src="{% static 'img/logo.png' %}" width="30" alt="online logo">
-            <p>Copyright &copy; 2016-2017 OnlineS3 Project</p>
-        </div>
-    </div>
-
-    <div id="european">
-        <img src="{% static 'img/eu_logo.png' %}" width="85" alt="Co-funded by the European Union">
-
-        <p>
-            Funded by the Horizon 2020 Framework Programme of the European Union.
-        </p>
-    </div>
-
-</footer>
-
-<!-- site footer -->
-
-</div>
-
-</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+﻿chapter,topic,category
+1.1.,Mathematics,Natural Sciences
+1.2.,Computer and Information Sciences,Natural Sciences
+1.3.,Physical Sciences,Natural Sciences
+1.4.,Chemical Sciences,Natural Sciences
+1.5.,Earth and related Environmental Sciences,Natural Sciences
+1.6.,Biological Sciences,Natural Sciences
+1.7.,Other Natural Sciences,Natural Sciences
+2.1.,Civil Engineering,Engineering and Technology
+2.2.,"Electrical-, Electronic- and Information-Engineering",Engineering and Technology
+2.3.,Mechanical Engineering,Engineering and Technology
+2.4.,Chemical Engineering,Engineering and Technology
+2.5.,Materials Engineering,Engineering and Technology
+2.6.,Medical Engineering,Engineering and Technology
+2.7.,Environmental Engineering,Engineering and Technology
+2.8.,Environmental Biotechnology,Engineering and Technology
+2.9.,Industrial Biotechnology,Engineering and Technology
+2.1.,Nano-Technology,Engineering and Technology
+2.11.,Other Engineering and Technologies,Engineering and Technology
+3.1.,Basic Medicine,Medical and Health Sciences
+3.2.,Clinical Medicine,Medical and Health Sciences
+3.3.,Health Sciences,Medical and Health Sciences
+3.4.,Medical Biotechnology,Medical and Health Sciences
+3.5.,Other Medical Sciences,Medical and Health Sciences
+4.1.,"Agriculture, Forestry, and Fisheries",Agricultural Sciences
+4.2.,Animal and Dairy Science,Agricultural Sciences
+4.3.,Veterinary Science,Agricultural Sciences
+4.4.,Agricultural Biotechnology,Agricultural Sciences
+4.5.,Other Agricultural Sciences,Agricultural Sciences
+5.1.,Psychology,Social Sciences
+5.2.,Economics and Business,Social Sciences
+5.3.,Educational Sciences,Social Sciences
+5.4.,Sociology,Social Sciences
+5.5.,Law,Social Sciences
+5.6.,Political Science,Social Sciences
+5.7.,Social and Economic Geography,Social Sciences
+5.8.,Media and Communications,Social Sciences
+5.9.,Other Social Sciences,Social Sciences
+6.1.,History and Archaeology,Humanities
+6.2.,Languages and Literature,Humanities
+6.3.,"Philosophy, Ethics and Religion",Humanities
+6.4.,"Arts (Arts, History of Arts, Performing Arts, Music)",Humanities
+6.5.,Other Humanities,Humanities
