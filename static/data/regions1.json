@@ -1,0 +1,671 @@
+[
+  {
+    "id": "AT1",
+    "name": "Ostösterreich",
+    "en": "Eastern Austria",
+    "lat": 48.2082,
+    "lon": 16.3738
+  },
+  {
+    "id": "AT2",
+    "name": "Südösterreich",
+    "en": "Southern Austria",
+    "lat": 47.34,
+    "lon": 14.14
+  },
+  {
+    "id": "AT3",
+    "name": "Westösterreich",
+    "en": "Western Austria",
+    "lat": 46.75,
+    "lon": 14.25
+  },
+  {
+    "id": "BE1",
+    "name": "Région De Bruxelles-Capitale / Brussels Hoofdstedelijk Gewest",
+    "en": "Brussels Capital Region",
+    "lat": 50.850346,
+    "lon": 4.351721
+  },
+  {
+    "id": "BE2",
+    "name": "Vlaams Gewest",
+    "en": "Flemish Region",
+    "lat": 51.010871,
+    "lon": 3.726461
+  },
+  {
+    "id": "BE3",
+    "name": "Région Wallonne",
+    "en": "Walloon Region",
+    "lat": 50.417564,
+    "lon": 4.451007
+  },
+  {
+    "id": "BG3",
+    "name": "Северна И Югоизточна България (Severna I Yugoiztochna Bulgaria)",
+    "en": "Northern and Eastern Bulgaria",
+    "lat": 43.533672,
+    "lon": 26.541116
+  },
+  {
+    "id": "BG4",
+    "name": "Югозападна И Южна Централна България (Yugozapadna I Yuzhna Tsentralna Bulgaria)",
+    "en": "South-Western and South-Central Bulgaria",
+    "lat": 42.192765,
+    "lon": 24.333566
+  },
+  {
+    "id": "CY0",
+    "name": "Cyprus",
+    "en": "Cyprus",
+    "lat": 35,
+    "lon": 33
+  },
+  {
+    "id": "CZ0",
+    "name": "Czech Republic",
+    "en": "Czech Republic",
+    "lat": 49.45,
+    "lon": 15.3
+  },
+  {
+    "id": "DE1",
+    "name": "Baden-Württemberg",
+    "en": "Baden-Wurttemberg",
+    "lat": 48.661604,
+    "lon": 9.350134
+  },
+  {
+    "id": "DE2",
+    "name": "Bayern",
+    "en": "Bavaria",
+    "lat": 48.790447,
+    "lon": 11.497889
+  },
+  {
+    "id": "DE3",
+    "name": "Berlin",
+    "en": "Berlin",
+    "lat": 52.520007,
+    "lon": 13.404954
+  },
+  {
+    "id": "DE4",
+    "name": "Brandenburg",
+    "en": "Brandenburg",
+    "lat": 52.131392,
+    "lon": 13.216249
+  },
+  {
+    "id": "DE5",
+    "name": "Bremen",
+    "en": "Free Hanseatic City of Bremen",
+    "lat": 53.079296,
+    "lon": 8.801694
+  },
+  {
+    "id": "DE6",
+    "name": "Hamburg",
+    "en": "Hamburg",
+    "lat": 53.551085,
+    "lon": 9.993682
+  },
+  {
+    "id": "DE7",
+    "name": "Hessen",
+    "en": "Hessen",
+    "lat": 50.652052,
+    "lon": 9.162438
+  },
+  {
+    "id": "DE8",
+    "name": "Mecklenburg-Vorpommern",
+    "en": "Mecklenburg-Vorpommern",
+    "lat": 53.612651,
+    "lon": 12.429595
+  },
+  {
+    "id": "DE9",
+    "name": "Niedersachsen",
+    "en": "Lower Saxony",
+    "lat": 52.636704,
+    "lon": 9.845077
+  },
+  {
+    "id": "DEA",
+    "name": "Nordrhein-Westfalen",
+    "en": "North Rhine-Westphalia",
+    "lat": 51.433237,
+    "lon": 7.661594
+  },
+  {
+    "id": "DEB",
+    "name": "Rheinland-Pfalz",
+    "en": "Rhineland-Palatinate",
+    "lat": 50.118346,
+    "lon": 7.308953
+  },
+  {
+    "id": "DEC",
+    "name": "Saarland",
+    "en": "Saarland",
+    "lat": 49.396423,
+    "lon": 7.022961
+  },
+  {
+    "id": "DED",
+    "name": "Sachsen",
+    "en": "Saxony",
+    "lat": 51.104541,
+    "lon": 13.201738
+  },
+  {
+    "id": "DEE",
+    "name": "Sachsen-Anhalt",
+    "en": "Saxony-Anhalt",
+    "lat": 51.950265,
+    "lon": 11.692274
+  },
+  {
+    "id": "DEF",
+    "name": "Schleswig-Holstein",
+    "en": "Schleswig-Holstein",
+    "lat": 54.219367,
+    "lon": 9.696117
+  },
+  {
+    "id": "DEG",
+    "name": "Thüringen",
+    "en": "Thuringia",
+    "lat": 51.010989,
+    "lon": 10.845346
+  },
+  {
+    "id": "DK0",
+    "name": "Denmark",
+    "lat": 56.26392,
+    "lon": 9.501785
+  },
+  {
+    "id": "EE0",
+    "name": "Estonia",
+    "lat": 58.595272,
+    "lon": 25.013607
+  },
+  {
+    "id": "EL3",
+    "name": "Attikη (Attiki)",
+    "en": "Attica",
+    "lat": 37.999292,
+    "lon": 23.722114
+  },
+  {
+    "id": "EL4",
+    "name": "Nησια Αιγαιου, Kρητη (Nisia Aigaiou, Kriti)",
+    "en": "Nisia Aigaiou, Kriti",
+    "lat": 38,
+    "lon": 25
+  },
+  {
+    "id": "EL5",
+    "name": "Βορεια Ελλαδα (Voreia Ellada)",
+    "en": "Voreia Ellada",
+    "lat": 40.520945,
+    "lon": 22.398554
+  },
+  {
+    "id": "EL6",
+    "name": "Κεντρικη Ελλαδα (Kentriki Ellada)",
+    "en": "Kentriki Ellada",
+    "lat": 40.520945,
+    "lon": 22.398554
+  },
+  {
+    "id": "ES1",
+    "name": "Noroeste",
+    "en": "North West (Spain)",
+    "lat": 38.045053,
+    "lon": -2.06652
+  },
+  {
+    "id": "ES2",
+    "name": "Noreste",
+    "en": "North East (Spain)",
+    "lat": 38.045053,
+    "lon": -2.06652
+  },
+  {
+    "id": "ES3",
+    "name": "Comunidad De Madrid",
+    "en": "Community of Madrid",
+    "lat": 40.416752,
+    "lon": -3.703832
+  },
+  {
+    "id": "ES4",
+    "name": "Centro (Es)",
+    "en": "Centre (Spain)",
+    "lat": 40.411517,
+    "lon": -3.707645
+  },
+  {
+    "id": "ES5",
+    "name": "Este",
+    "en": "East (Spain)",
+    "lat": 37.20199,
+    "lon": -1.89286
+  },
+  {
+    "id": "ES6",
+    "name": "Sur",
+    "en": "South (Spain)",
+    "lat": 36.732517,
+    "lon": -4.427498
+  },
+  {
+    "id": "ES7",
+    "name": "Canarias",
+    "en": "Canary Islands",
+    "lat": 28.291564,
+    "lon": -16.62913
+  },
+  {
+    "id": "FI1",
+    "name": "Manner-Suomi",
+    "en": "Mainland Finland",
+    "lat": 62.94331,
+    "lon": 23.528527
+  },
+  {
+    "id": "FI2",
+    "name": "Åland",
+    "en": "Aland",
+    "lat": 60.178525,
+    "lon": 19.91561
+  },
+  {
+    "id": "FR1",
+    "name": "Île De France",
+    "en": "Region parisienne",
+    "lat": 48.84992,
+    "lon": 2.637041
+  },
+  {
+    "id": "FR2",
+    "name": "Bassin Parisien",
+    "lat": 47.978038,
+    "lon": 3.377076
+  },
+  {
+    "id": "FR3",
+    "name": "Nord - Pas-De-Calais",
+    "en": "North (France)",
+    "lat": 50.573277,
+    "lon": 2.324468
+  },
+  {
+    "id": "FR4",
+    "name": "Est",
+    "en": "East (France)",
+    "lat": 48.699803,
+    "lon": 6.187807
+  },
+  {
+    "id": "FR5",
+    "name": "Ouest",
+    "en": "West (France)",
+    "lat": 48.091537,
+    "lon": -4.331674
+  },
+  {
+    "id": "FR6",
+    "name": "Sud-Ouest",
+    "en": "South West (France)",
+    "lat": 44.476817,
+    "lon": 2.228528
+  },
+  {
+    "id": "FR7",
+    "name": "Centre-Est",
+    "en": "Centre East (France)",
+    "lat": 45.777869,
+    "lon": 4.924552
+  },
+  {
+    "id": "FR8",
+    "name": "Méditerranée",
+    "en": "Mediterranean",
+    "lat": 46.227638,
+    "lon": 2.213749
+  },
+  {
+    "id": "FRA",
+    "name": "Départements D'outre-Mer",
+    "en": "Overseas Departments (France)",
+    "lat": 48.849097,
+    "lon": 2.316329
+  },
+  {
+    "id": "HR0",
+    "name": "Hrvatska",
+    "en": "Croatia",
+    "lat": 45.1,
+    "lon": 15.2
+  },
+  {
+    "id": "HU1",
+    "name": "Közép-Magyarország",
+    "en": "Central Hungary",
+    "lat": 47.448,
+    "lon": 19.461813
+  },
+  {
+    "id": "HU2",
+    "name": "Dunántúl",
+    "en": "Transdanubia",
+    "lat": 46.955873,
+    "lon": 18.072622
+  },
+  {
+    "id": "HU3",
+    "name": "Alföld És Észak",
+    "en": "Great Plain and North",
+    "lat": 47.084151,
+    "lon": 20.999346
+  },
+  {
+    "id": "IE0",
+    "name": "Ireland",
+    "lat": 53.1424,
+    "lon": -7.6921
+  },
+  {
+    "id": "ITC",
+    "name": "Nord-Ovest",
+    "en": "North West (Italy)",
+    "lat": 44.910824,
+    "lon": 8.622695
+  },
+  {
+    "id": "ITH",
+    "name": "Nord-Est",
+    "en": "North East (Italy)",
+    "lat": 44.356122,
+    "lon": 9.391732
+  },
+  {
+    "id": "ITI",
+    "name": "Centro (It)",
+    "en": "Centre (Italy)",
+    "lat": 41.87194,
+    "lon": 12.56738
+  },
+  {
+    "id": "ITF",
+    "name": "Sud",
+    "en": "South (Italy)",
+    "lat": 40.562583,
+    "lon": 15.406808
+  },
+  {
+    "id": "ITG",
+    "name": "Isole",
+    "en": "Islands (Italy)",
+    "lat": 44.446166,
+    "lon": 8.131978
+  },
+  {
+    "id": "LT0",
+    "name": "Lietuva",
+    "en": "Lithuania",
+    "lat": 55.169438,
+    "lon": 23.881275
+  },
+  {
+    "id": "LU0",
+    "name": "Luxembourg",
+    "en": "Luxembourg",
+    "lat": 49.815273,
+    "lon": 6.129583
+  },
+  {
+    "id": "LV0",
+    "name": "Latvija",
+    "en": "Latvia",
+    "lat": 56.879635,
+    "lon": 24.603189
+  },
+  {
+    "id": "MT0",
+    "name": "Malta",
+    "lat": 35.937496,
+    "lon": 14.375416
+  },
+  {
+    "id": "NL1",
+    "name": "Noord-Nederland",
+    "en": "North Netherlands",
+    "lat": 51.931929,
+    "lon": 4.459927
+  },
+  {
+    "id": "NL2",
+    "name": "Oost-Nederland",
+    "en": "East Netherlands",
+    "lat": 52.358619,
+    "lon": 4.9405
+  },
+  {
+    "id": "NL3",
+    "name": "West-Nederland",
+    "en": "West Netherlands",
+    "lat": 52.373354,
+    "lon": 4.862513
+  },
+  {
+    "id": "NL4",
+    "name": "Zuid-Nederland",
+    "en": "South Netherlands",
+    "lat": 52.020798,
+    "lon": 4.493784
+  },
+  {
+    "id": "PL1",
+    "name": "Region Centralny",
+    "en": "Central Region (Poland)",
+    "lat": 51.9194,
+    "lon": 19.1451
+  },
+  {
+    "id": "PL2",
+    "name": "Region Południowy",
+    "en": "South Region (Poland)",
+    "lat": 50.259491,
+    "lon": 19.019013
+  },
+  {
+    "id": "PL3",
+    "name": "Region Wschodni",
+    "en": "East Region (Poland)",
+    "lat": 53.357211,
+    "lon": 14.610087
+  },
+  {
+    "id": "PL4",
+    "name": "Region Północno-Zachodni",
+    "en": "North-West Region (Poland)",
+    "lat": 46.46,
+    "lon": 23.35
+  },
+  {
+    "id": "PL5",
+    "name": "Region Południowo-Zachodni",
+    "en": "South-West Region (Poland)",
+    "lat": 52.2002,
+    "lon": 17.145
+  },
+  {
+    "id": "PL6",
+    "name": "Region Północny",
+    "en": "North Region (Poland)",
+    "lat": 52.610997,
+    "lon": 14.666806
+  },
+  {
+    "id": "PT1",
+    "name": "Continente",
+    "en": "Mainland Portugal",
+    "lat": 37.746239,
+    "lon": -25.584753
+  },
+  {
+    "id": "PT2",
+    "name": "Região Autónoma Dos Açores",
+    "en": "Azores",
+    "lat": 37.741249,
+    "lon": -25.675594
+  },
+  {
+    "id": "PT3",
+    "name": "Região Autónoma Da Madeira",
+    "en": "Madeira",
+    "lat": 32.760707,
+    "lon": -16.959472
+  },
+  {
+    "id": "RO1",
+    "name": "Macroregiunea Unu",
+    "en": "Macroregion One",
+    "lat": 45.750782,
+    "lon": 22.912722
+  },
+  {
+    "id": "RO2",
+    "name": "Macroregiunea Doi",
+    "en": "Macroregion Two",
+    "lat": 43.787078,
+    "lon": 28.57361
+  },
+  {
+    "id": "RO3",
+    "name": "Macroregiunea Trei",
+    "en": "Macroregion Three",
+    "lat": 46.476978,
+    "lon": 24.900038
+  },
+  {
+    "id": "RO4",
+    "name": "Macroregiunea Patru",
+    "en": "Macroregion Four",
+    "lat": 44.737434,
+    "lon": 26.467932
+  },
+  {
+    "id": "SE1",
+    "name": "Östra Sverige",
+    "en": "East Sweden",
+    "lat": 59.433333,
+    "lon": 16.6
+  },
+  {
+    "id": "SE2",
+    "name": "Södra Sverige",
+    "en": "South Sweden",
+    "lat": 58.759573,
+    "lon": 17.298761
+  },
+  {
+    "id": "SE3",
+    "name": "Norra Sverige",
+    "en": "North Sweden",
+    "lat": 58.61227,
+    "lon": 15.476596
+  },
+  {
+    "id": "SI0",
+    "name": "Slovenija",
+    "en": "Slovenia",
+    "lat": 46.151241,
+    "lon": 14.995463
+  },
+  {
+    "id": "SK0",
+    "name": "Slovensko",
+    "en": "Slovakia",
+    "lat": 48.669026,
+    "lon": 19.699024
+  },
+  {
+    "id": "UKC",
+    "name": "North East (England)",
+    "lat": 54.9456,
+    "lon": -1.948
+  },
+  {
+    "id": "UKD",
+    "name": "North West (England)",
+    "lat": 54.1045,
+    "lon": -2.6477
+  },
+  {
+    "id": "UKE",
+    "name": "Yorkshire And The Humber",
+    "lat": 53.7908,
+    "lon": -1.75457685
+  },
+  {
+    "id": "UKF",
+    "name": "East Midlands (England)",
+    "lat": 52.87,
+    "lon": -0.995
+  },
+  {
+    "id": "UKG",
+    "name": "West Midlands (England)",
+    "lat": 52.4751,
+    "lon": -1.8298
+  },
+  {
+    "id": "UKH",
+    "name": "East Of England",
+    "lat": 52.4727,
+    "lon": 0.7855
+  },
+  {
+    "id": "UKI",
+    "name": "London",
+    "lat": 51.4309,
+    "lon": -0.0936
+  },
+  {
+    "id": "UKJ",
+    "name": "South East (England)",
+    "lat": 51.0552,
+    "lon": -0.0439
+  },
+  {
+    "id": "UKK",
+    "name": "South West (England)",
+    "lat": 50.8198,
+    "lon": -3.7298
+  },
+  {
+    "id": "UKL",
+    "name": "Wales",
+    "lat": 52.1307,
+    "lon": -3.7837
+  },
+  {
+    "id": "UKM",
+    "name": "Scotland",
+    "lat": 56.4907,
+    "lon": -4.2026
+  },
+  {
+    "id": "UKN",
+    "name": "Northern Ireland",
+    "lat": 54.7877,
+    "lon": -6.4923
+  }
+]

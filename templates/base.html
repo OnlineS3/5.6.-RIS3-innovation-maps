@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="{% static "css/layout.css" %}"/>
     <link rel="stylesheet" href="{% static "css/header.css" %}"/>
     <link rel="stylesheet" href="{% static "css/footer.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/img.css"    %}"/>
-
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
 
     {% block addHead %}
@@ -74,10 +72,10 @@
                     <div class='user-btns'>
                         {% if request.user.is_authenticated %}
                             Welcome '{{ request.user.username }}'
-                            <a class='button login-btn' href='{% url "logout" %}'> Sign out </a>
+                            <a class='button login-btn' href=''> Sign out </a>
                         {% else %}
-                            <a class='button login-btn' href='{% url "login" %}'> Sign in </a>
-                            <a class='button register-btn' href='{% url "signup" %}'> Sign up </a>
+                            <a class='button login-btn'> Sign in </a>
+                            <a class='button register-btn'> Sign up </a>
                         {% endif %}
                     </div>
                 </div>

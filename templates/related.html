@@ -1,28 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block addHead %}
-    <style>
-    body {
-        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 13px;
-        color: #666;
-        line-height: 1.6;
-    }
-    p {
-        text-align: justify;
-        margin: 0 0 11px;
-        display: block;
-        -webkit-margin-before: 1em;
-        -webkit-margin-after: 1em;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-    }
-
-    </style>
-
-{% endblock %}
-
 <!-- Application's space -->
 {% block content %}
 <div class="site-content">
@@ -31,35 +9,29 @@
 
 		<h2>Related Documents</h2>
 
-		<p>Selected use cases using the RIS3 Innovation Mapping tool of the Online-S3 platform:</p>
-        <ul>
-            <li style="list-style-type: disc">
-                <p>
-                    World Bank (2015),
-                    <a href="http://documents.worldbank.org/curated/en/801221468186841613/pdf/106148-REPLACEMENT-v2-English-REPORT-Web.pdf" style="text-decoration: none; color: #3cbefe;" target="_blank">Towards an innovative Poland: The entrepreneurial discovery process and business needs analysis</a>, Washington; <span class="fa fa-file-pdf-o"></span>
-                    <i>
-                        Innovation Mapping for the Dolnoslaskie region (PL) based on "Fast Track" applications to the Polish
-                        National Centre for Research and Development (NCBR).
-                    </i>
-                </p>
+		<p style="margin-bottom: 0">Selected use cases using the RIS3 Innovation Mapping tool of the Online-S3 platform:</p>
+        <ul style="margin-top: 0">
+            <li class="dashed">
+                <strong>The World Bank Group (2017), <i>Towards an innovative Poland: The entrepreneurial discovery process and business needs analysis</i></strong>, Washington; The World Bank Group,
+                <i>pp.29-30, 97-101.</i> [Online] Available at: <a href="http://www.worldbank.org/en/country/poland/publication/entrepreneurial-discovery-process-poland" target="_blank"><i class="fa fa-link"></i></a> / <a href="http://documents.worldbank.org/curated/en/801221468186841613/pdf/106148-REPLACEMENT-v2-English-REPORT-Web.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a> <br/>
+                <i>Introduction to the Innovation Map Methodology including Case Study:
+                Mapping Innovative Research in the Dolnoslaskie region (PL) based on "Fast Track" applications to the Polish <abbr title="National Centre for Research and Development">NCBR</abbr>.</i>
             </li>
         </ul>
-		<p>Selected RIS3 strategies including the Innovation Map method in their implementation process:</p>
-		<ul class='dashed'>
-            <li>
-                <a href="http://foresight.s3platform.eu/" style="text-decoration: none; color: #3cbefe;" target="_blank">Delphi - Foresight</a>
-            </li>
+		<p style="margin-bottom: 0">Selected RIS3 strategies including the Innovation Map method in their implementation process:</p>
+		<ul class='dashed' style="margin-top: 0">
+            <li> <a href="http://foresight.s3platform.eu/" style="text-decoration: none; color: #3cbefe;" target="_blank">Delphi - Foresight</a> </li>
 		</ul>
 
 	</article>
 
 	<aside id='sidebar'>
         <a href='{% url "innovationmaps_pdf" %}' target="_blank">
-		    <button class="alt"> Download Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+		    <button id="df0" class="alt"> Download Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
         </a>
 		<div></div>
         <a href='{% url "innovationmaps_map" %}'>
-		    <button> Access to application  <img src="{% static 'img/access-icon.png' %}" width="20"></button>
+		    <button id="df1"> Access to application  <img src="{% static 'img/access-icon.png' %}" width="20"></button>
         </a>
 	</aside>
 

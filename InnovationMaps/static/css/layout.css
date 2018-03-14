@@ -7,7 +7,8 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+	position: relative;
 }
 
 p, ul li {
@@ -19,7 +20,7 @@ p, ul li {
 p {
 	line-height: 1.8;
 	text-align: justify;
-	padding: 3px 16px;
+	padding: 3px 16px !important;
 }
 
 button {
@@ -27,14 +28,22 @@ button {
 }
 
 h2 {
-    margin: 0;
-    color: #de1515;
+    margin: 0 !important;
+    color: #de1515 !important;
     padding: 1rem 0 0rem 1rem;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 400 !important;;
 	clear: both;
-	font-size: 21px;
+	font-size: 21px !important;;
 	font-family: tahoma
+}
+
+h4 {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: 200;
+	color: #de1515;
+	padding: 0 0 0 1rem;
 }
 
 #page {
@@ -65,7 +74,6 @@ h2 {
 
 #main-content ul {
 	list-style-type: none;
-	margin-left: 20px;
 	line-height: 2
 }
 
@@ -89,7 +97,7 @@ h2 {
 	text-align: center;
 }
 
-#sidebar button {
+#sidebar button[id^="df"] {
 	color: #fff;
 	background: linear-gradient(#2197f9,#007ce2);
 	line-height: 1.4;
@@ -105,25 +113,25 @@ h2 {
 	font-weight: 600;
 }
 
-#sidebar button.alt {
+#sidebar button[id^="df"].alt {
 	border: solid 1px red;
 	padding: 5px 8px;
 	background: linear-gradient(#ff6b6b,#ec2929);
 }
 
-#sidebar button img {
+#sidebar button[id^="df"] img {
 	position: relative;
 	top: 3px;
 	left: 4px;
 }
 
-#sidebar button .fa {
+#sidebar button[id^="df"] .fa {
 	position: relative;
 	font-size: 14px;
 	left: 4px;
 }
 
-#sidebar button:hover {
+#sidebar button[id^="df"]:hover {
 	opacity: .8;
 }
 
@@ -150,4 +158,12 @@ h2 {
     padding: 0 !important;
     margin: -10px 0 18px;
     color: #2e64aa;
+}
+
+.more {
+	margin-bottom: 0;
+	max-height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }

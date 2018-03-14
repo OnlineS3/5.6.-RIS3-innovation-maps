@@ -1,0 +1,163 @@
+input[type="file"] {
+    display: none;
+}
+
+input[name="type"]:checked + label {
+    color: #2e64aa;
+}
+input[name="bubble"]:checked + label {
+    color: #2e64aa;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+h4[data-toggle="collapse"] {
+    cursor: pointer;
+    color: #2e64aa;
+}
+
+#spreadsheet, #preview {
+    margin: 10px;
+    width: 97%;
+    max-height: 540px;
+    overflow: auto;
+}
+
+#graph, #map {
+    width: 100%; /*740px;*/
+    height: 840px;
+}
+
+.full_menu {
+    z-index: 2;
+    position: fixed;
+    top: 0; left: 0;
+}
+
+.full {
+    z-index: 1;
+    position: fixed;
+    top: 34px;
+    left: 0;
+    max-width: none !important;   width:  100% !important;
+    max-height: none !important;  height: 100% !important;
+    margin: auto !important;
+    background-color: white;
+}
+
+#title {
+    z-index: 2;
+    text-align: center;
+    border: none;
+    background-color: white;
+}
+
+#title:focus {
+    outline: none;
+}
+
+#valid {
+    float: right;
+}
+
+.step_2 {
+    display: none;
+}
+
+#export {
+    width: 360px;
+    padding: 5px;
+}
+
+.select2-container {
+    width: 100%;
+}
+
+.dismiss {
+    float: right;
+    cursor: pointer;
+}
+
+.heading {
+    color: #2e64aa;
+    padding-left: 0;
+}
+
+.panel-heading {
+    padding-bottom: 0;
+    background-color: transparent !important;
+}
+
+.dropdown-header {
+    font-weight: bold;
+}
+
+#app_settings[class~="btn-group-vertical"] {
+    width: 100%;
+}
+#app_settings[class~="btn-group-vertical"] div ul.dropdown-menu {
+    top: 0;
+    right: 100%;
+    left: -100%;
+    z-index: 1;
+}
+
+#app_settings[class~="full_menu"] div button i {
+    transform: rotate(-90deg);
+    margin-right: 10px;
+}
+
+#timeline {
+    background: linear-gradient(white,transparent);
+    padding-top: 20px;
+}
+
+#timeline[class="affix"] {
+    max-width: 840px;
+    width: 100%;
+    top: 0;
+    /*z-index: 2;*/
+}
+#menu[class="affix"] {
+    top: 20px;
+}
+
+#sources, #data, #visualisations {
+    padding-top: 80px;
+    min-height: 50rem;
+}
+
+.affix-top {
+    margin-bottom: -40px;
+}
+
+#arrows {
+    display: grid;
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+}
+
+.div-divider {
+    height: 5px;
+    background: linear-gradient(white,grey,white);
+}
+
+#esc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#table tr td .jexcel_label {
+    display: none;
+}
+
+.colorHandle {
+    display: inline-grid;
+    position: relative;
+    left: -14px;
+}

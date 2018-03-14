@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
+import json
 
-from django.contrib.auth import login, authenticate
-from django.contrib.auth.forms import UserCreationForm
-from django.http import FileResponse
-from django.http import Http404
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+from django.http import FileResponse, JsonResponse, Http404
 
+from InnovationMaps.models import *
 from InnovationMaps.settings import STATIC_ROOT
 
 
@@ -14,12 +13,14 @@ def about(request):
     return render(request, 'about.html')
 
 
-def guidepage(request):
+def guide(request):
     return render(request, 'guide.html')
 
 
-def guide(request):
+def pdf(request):
+    print STATIC_ROOT
     path = os.path.join(STATIC_ROOT, 'data', 'Innovation Maps Guideline.pdf')
+
     if not os.path.exists(path):
         raise Http404()
     else:
@@ -38,20 +39,45 @@ def related(request):
     return render(request, 'related.html')
 
 
-def signup(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('about')
-    else:
-        form = UserCreationForm()
-    return render(request, 'signup.html', {'form': form})
-
-
 def map(request):
     return render(request, 'map.html')
+
+
+def example(request):
+    path = os.path.join(STATIC_ROOT, 'data', 'Example.csv')
+    if not os.path.exists(path):
+        raise Http404()
+    else:
+        return FileResponse(open(path, 'rb'), content_type='text/csv')
+
+
+def filter(request):
+    if request.is_ajax():
+        data = json.load(open(os.path.join(STATIC_ROOT, 'data', request.GET.get("file", ""))))
+        term = request.GET.get("q", "")
+        p = request.GET.get("p", "")
+        if p:
+            data = [x for x in data if(x['id'].startswith('UK') or x['id'].startswith('FI'))]
+        filtered = [x for x in data if(term in x['id'] or term in x['name'] or ('en' in x and term in x['en']))]
+        return JsonResponse(json.dumps(filtered), safe=False)
+
+
+def data(request):
+    if request.is_ajax():
+        sql = """SELECT ProjectId, Title, InnovationMaps_organisation.Region AS Region, FundingAmount, OECD, NABS
+                 FROM InnovationMaps_project LEFT OUTER JOIN InnovationMaps_organisation ON InnovationMaps_project.Organisation_id = InnovationMaps_organisation.LeadROId
+                 WHERE Region IS NOT "" AND OECD IS NOT "" AND NABS IS NOT ""
+              """
+        region = request.GET.get("Region", "")
+        if region != "":
+            sql += "AND Region LIKE \"" + region + "%\""
+        oecd = request.GET.get("OECD", "")
+        if oecd != "":
+            sql += "AND OECD LIKE \"%" + oecd + "%\""
+        nabs = request.GET.get("NABS", "")
+        if nabs != "":
+            sql += "AND OECD LIKE \"%" + nabs + "%\""
+        data = []
+        for r in Project.objects.raw(sql):
+            data.append({'Project Identifier': r.Title, 'Region(s)': r.Region, 'Funding': str(r.FundingAmount), 'OECD': r.OECD, 'NABS': r.NABS})
+        return JsonResponse(json.dumps(data), safe=False)

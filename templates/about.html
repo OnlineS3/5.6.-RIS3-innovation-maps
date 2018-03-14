@@ -4,23 +4,20 @@
 <!-- Application's space -->
 {% block content %}
 <div class="site-content">
-
 	<article id="main-content">
-
-		<h2>About</h2>
-
+		<h2>About the Application</h2>
 		<p>
             Innovation Mapping is a method that enables acquiring a better understanding of the process of innovation,
             assisting in the development of new tools to measure innovation-related phenomena and to articulate
             innovation plans. Innovation Maps can help uncover critical bottom-up information embedded in firms’ R&D and
             innovation applications for public support. In the context of the smart specialisation process and
             entrepreneurial discovery, Innovation Maps have been used to help tease out information about technological
-            trends by the private sector.
+            trends supported by the private sector.
 		</p>
 
-		<p>The logical steps of the application, based on its methodological description are:</p>
+		<p style="margin-bottom: 0">The logical steps of the application, based on its methodological description are:</p>
 
-		<ul class='dashed'>
+		<ul class="dashed" style="margin-top: 0">
             <li><i>Step 1.</i> Receive information on the concept of Innovation Maps, and the standardisation of data required to produce such maps. See: <a href="{% url 'innovationmaps_guide' %}">Guide</a>/<a href="{% url 'innovationmaps_related' %}">Related</a></li>
             <li><i>Step 2.</i> Import <strong>grant application</strong> data tables into the <a href="{% url 'innovationmaps_map' %}">online application</a>. This data must comply with the requirements for plotting Innovation Maps, including indication of <strong>economic sectors</strong> of all grants and <strong>technology fields</strong> covered. </li>
 			<li><i>Step 3.</i> Select among different layouts for the visualisation of the data. The app provides file templates which are annotated within the <a href="{% url 'innovationmaps_guide' %}">guide</a> in order to aid in data selection and upload.</li>
@@ -34,15 +31,28 @@
         </div>
         <p class="img-caption">Figure 1: Overview of the functionality of the RIS3 Innovation Map Tool</p>
 
+        <br>
+        <hr>
+
+        <h4>Key Benefits</h4>
+        <ul class="dashed">
+            <li>Enables acquiring a better understanding of the process of innovation, assisting in the development of new tools to measure innovation-related phenomena and to articulate innovation plans.</li>
+            <li>Helps to identify regional strengths and concentrations of innovation activities.</li>
+            <li>Aids in targeting Smart Specialisation priority areas based on real demand.</li>
+            <li>Helps monitor business and technology trends including tracking real-time changes.</li>
+            <li>Acts complementary to top-down approaches such as foresight programmes, macro and sectoral data and innovation surveys.</li>
+            <li>Provide credible and granular information on innovation activities.</li>
+        </ul>
+
 	</article>
 
 	<aside id='sidebar'>
         <a href='{% url "innovationmaps_pdf" %}' target="_blank">
-		    <button class="alt"> Download Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+		    <button id="df0" class="alt"> Download Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
         </a>
 		<div></div>
         <a href='{% url "innovationmaps_map" %}'>
-		    <button> Access to application  <img src="{% static 'img/access-icon.png' %}" width="20"></button>
+		    <button id="df1"> Access to application  <img src="{% static 'img/access-icon.png' %}" width="20"></button>
         </a>
 	</aside>
 

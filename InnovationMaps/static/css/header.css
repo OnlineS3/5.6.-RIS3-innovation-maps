@@ -155,7 +155,8 @@ nav#top-menu a:hover {
 }
 
 #header-main .login-btn:hover {
-	background: #7fe37f
+	background: #7fe37f;
+    cursor: not-allowed;
 }
 
 #header-main .login-btn {
@@ -172,7 +173,8 @@ nav#top-menu a:hover {
 }
 
 #header-main .register-btn:hover {
-    background: #3b89b7
+    background: #3b89b7;
+    cursor: not-allowed;
 }
 
 #header-main .menu {

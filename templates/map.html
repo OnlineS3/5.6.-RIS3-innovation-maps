@@ -6,302 +6,50 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- jQueryUI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"/>
 
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- CSV Reader -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.js"></script>
-
-    <!-- jExcel -->
-    <link   rel="stylesheet" href="http://cdn.bossanova.uk/css/jquery.jexcel.css" type="text/css"/>
-    <script src="http://cdn.bossanova.uk/js/jquery.jexcel.js"></script>
-
-    <!-- plot.ly -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Underscore JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 
     <!-- Walk-through -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour.min.css" />
 
     <!-- Select2 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2.min.js"></script>
 
-    <!-- Flag Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css" />
+    <!-- alasql - NoSQL for file parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.2/alasql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.9.2/xlsx.core.min.js"></script>
 
-    <!-- Stepwizard css -->
-    <style>
-        .stepwizard-step p {
-            margin-top: 10px;
-        }
+    <!-- CSV Reader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.js"></script>
 
-        .stepwizard-row {
-            display: table-row;
-        }
+    <!-- jExcel -->
+    <script src="{% static 'js/jexcel.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/jexcel.css' %}" type="text/css"/>
 
-        .stepwizard {
-            display: table;
-            width: 100%;
-            position: relative;
-        }
+    <!-- plot.ly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-        .stepwizard-step button[disabled] {
-            opacity: 1 !important;
-            filter: alpha(opacity=100) !important;
-        }
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        .stepwizard-row:before {
-            top: 14px;
-            bottom: 0;
-            position: absolute;
-            content: " ";
-            width: 100%;
-            height: 1px;
-            background-color: #ccc;
-            z-order: 0;
+    <!-- App js -->
+    <script src="{% static 'js/im_map.js' %}"></script>
+    <script src="{% static 'js/im_utils.js' %}"></script>
+    <script src="{% static 'js/select2Editor.js' %}"></script>
+    <script src="{% static 'js/colorDefaults.js' %}"></script>
 
-        }
+    <link   rel="stylesheet" href="{% static 'css/map.css' %}" type="text/css"/>
+    <link   rel="stylesheet" href="{% static 'css/stepwizzard.css' %}" type="text/css"/>
 
-        .stepwizard-step {
-            display: table-cell;
-            text-align: center;
-            position: relative;
-        }
-
-        .btn-circle {
-          width: 30px;
-          height: 30px;
-          text-align: center;
-          padding: 6px 0;
-          font-size: 12px;
-          line-height: 1.428571429;
-          border-radius: 15px;
-        }
-
-        #overlay {
-            position: fixed;    /* Sit on top of the page content */
-            display: none;      /* Hidden by default */
-            width: 100%;        /* Full width (cover the whole page) */
-            height: 100%;       /* Full height (cover the whole page) */
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-            z-index: 2;         /* Specify a stack order in case you're using a different order for other elements */
-            cursor: pointer;    /* Add a pointer on hover */
-        }
-
-        .pagetitle {
-            margin: 0;
-            color: #de1515;
-            padding: 1rem 0 0rem 1rem;
-            font-style: normal;
-            font-weight: 400;
-            clear: both;
-            font-size: 21px;
-            font-family: tahoma
-        }
-
-    </style>
-
-    <!-- Step Transitions -->
-    <script type="application/javascript">
-        var regions, business, technology = null;
-        var regionLab = [], regionDes = [], regionLat = [], regionLon = [];
-
-        var csv, headers, records = null;
-        var x, y, z = [];
-
-        var geo = true, r = false;
-        var plotTitle = "[Insert Title]";
-        var rIdx=1, fIdx=2, bIdx=3, tIdx=4;
-        var noFilters = 0;
-        var classification = 'standard', fileChange = false, edited = false;
-
-        function step0() {
-            $('#stepTitle0').show();
-            $('#stepTitle1').hide();
-            $('#stepTitle2').hide();
-
-            $('.tooltip').remove();
-            $('#1').tooltip({title:'Data Manipulation'});
-            $('#2').tooltip({title:'Data Visualisation'});
-
-            $('#0').prop('disabled', true ).removeClass('btn-default').addClass('btn-primary');
-            $('#1').prop('disabled', false).removeClass('btn-primary').addClass('btn-default');
-            $('#2').prop('disabled', false).removeClass('btn-primary').addClass('btn-default');
-
-            $('#fileSelect').collapse('show');
-            $('#fileMenu').collapse('show');
-            $('#dataEdit').collapse('hide');
-            $('#dataMenu').collapse('hide');
-            $('#plotEdit').collapse('hide');
-            $('#plotMenu').collapse('hide');
-
-            if(csv==null)
-                $('#msg').html('Manually insert data');
-            else
-                $('#msg').html('Continue editing');
-
-            //Do walk-through
-            var tour = new Tour({
-               steps: [
-                   {
-                       element: "#file",
-                       title: "Step 1:",
-                       content: "Select a local file containing project level funding information. <br/> Alternatively..."
-                   },
-                   {
-                       element: "#skip",
-                       title: 'Alternative Option:',
-                       content: "... skip this step and manually insert data at a later stage."
-                   }
-               ]
-            });
-            tour.init();
-            tour.start();
-        }
-
-        function step1() {
-            $('#stepTitle0').hide();
-            $('#stepTitle1').show();
-            $('#stepTitle2').hide();
-
-            $('.tooltip').remove();
-            $('#0').tooltip({title:'Data Selection'});
-            $('#2').tooltip({title:'Data Visualisation'});
-
-            $('#0').prop('disabled', false).removeClass('btn-primary').addClass('btn-default');
-            $('#1').prop('disabled', true ).removeClass('btn-default').addClass('btn-primary');
-            $('#2').prop('disabled', false).removeClass('btn-primary').addClass('btn-default');
-
-            $('#fileSelect').collapse('hide');
-            $('#fileMenu').collapse('hide');
-            $('#dataEdit').collapse('show');
-            $('#dataMenu').collapse('show');
-            $('#plotEdit').collapse('hide');
-            $('#plotMenu').collapse('hide');
-
-            //Do walk-through
-
-        }
-
-        function step2() {
-            plot();
-
-            $('#stepTitle0').hide();
-            $('#stepTitle1').hide();
-            $('#stepTitle2').show();
-
-            $('.tooltip').remove();
-            $('#0').tooltip({title:'Data Selection'});
-            $('#1').tooltip({title:'Data Manipulation'});
-
-            $('#0').prop('disabled', false).removeClass('btn-primary').addClass('btn-default');
-            $('#1').prop('disabled', false).removeClass('btn-primary').addClass('btn-default');
-            $('#2').prop('disabled', true ).removeClass('btn-default').addClass('btn-primary');
-
-            $('#fileSelect').collapse('hide');
-            $('#fileMenu').collapse('hide');
-            $('#dataEdit').collapse('hide');
-            $('#dataMenu').collapse('hide');
-            $('#plotEdit').collapse('show');
-            $('#plotMenu').collapse('show');
-
-            plotType();
-
-            //Do walk-through
-
-        }
-
-        function plotType(){
-            if(geo){
-                $('#hm').removeClass('btn-primary').addClass('btn-default');
-                $('#ge').removeClass('btn-default').addClass('btn-primary');
-            } else {
-                $('#hm').removeClass('btn-default').addClass('btn-primary');
-                $('#ge').removeClass('btn-primary').addClass('btn-default');
-            }
-        }
-
-        $(document).ready(function(){
-            //Init spreadsheet and plot with dummy data
-            headers = ['Project', 'Region', 'Amount Funded', 'OECD', 'NABS'];
-            records = [['', '', '', '', '']];
-
-            //Load Data
-            $.when(
-                $.ajax({ url: "{% static 'data/regions.csv' %}", success: function(content) {    regions = $.csv.toObjects(content); }}),
-                $.ajax({ url: "{% static 'data/OECD.csv' %}",    success: function(content) {   business = $.csv.toObjects(content); }}),
-                $.ajax({ url: "{% static 'data/NABS.csv' %}",    success: function(content) { technology = $.csv.toObjects(content); }})
-            ).then(function(){
-                x = $.map(  business, function(val) { return val.chapter; });
-                y = $.map(technology, function(val) { return val.chapter; });
-
-                regions.forEach(function (r) {
-                    regionLab.push(r['NUTS-Code']);
-                    regionDes.push(r['Description'].toLowerCase());
-                    regionLat.push(r['lat']);
-                    regionLon.push(r['long']);
-                });
-
-                processData();
-            });
-
-            //Set-up from data selection stage
-            step0();
-
-            $('#rIdx').on('change', function(){ rIdx = this.value; });
-            $('#bIdx').on('change', function(){ bIdx = this.value; });
-            $('#tIdx').on('change', function(){ tIdx = this.value; });
-
-            $('#OECD').tooltip({title: "The Organisation for Economic Co-operation and Development (OECD) - Purpose Codes: Sector Classification. <a>Read More</a>", html: true});
-            $('#NABS').tooltip({title: "Nomenclature for the Analysis and Comparison of Scientific Programmes and Budgets (NABS) - Highlighting the socio-economic objectives (SEO) of research and development (R&D) activities. <a>Read More</a>", html: true});
-            $('#oClass').tooltip({title: "Other customisable classifications. Requires CSV file of the format: \"chapter\",\"topic\",\"category\" <a>Read More</a>", html: true});
-
-            // Scrollable spreadsheet
-            $('#spreadsheet').scroll(function(){
-               var hTranslate = "translate("+this.scrollLeft+"px,0)";
-               $("#spreadsheet td:first-child").each(function(i){ if(i>0) this.style.transform = hTranslate; });
-               var vTranslate = "translate(0,"+this.scrollTop+"px)";
-               this.querySelector("thead").style.transform = vTranslate;
-
-               $("#spreadsheet thead > tr > td:first-child").removeAttr('style').css({'z-index': 5});
-            });
-
-            document.addEventListener('keydown', function (e) {
-                if (e.keyCode == 46) { //DEL
-                    if(confirm('Delete selected columns') == true) {
-                        var ids = $.map($("td[class='selected']"), function(n){ return n.id.replace('col-', ''); });
-                        headers.splice(ids[0], ids.length);
-                        records.forEach(function(record){record.splice(ids[0], ids.length);});
-                        processData();
-                    }
-                } else if(e.keyCode == 27) { //ESC
-                    exitFullscreen();
-                }
-            }, false);
-
-            window.onbeforeunload = function(e){
-                if(edited)
-                    return ''
-            };
-        });
-
-        function exitFullscreen(){
-            $('#spreadsheet').removeAttr("style").css({width: "100%", "max-height": "540px", overflow: "auto"});
-            $('#overlay').remove();
-            $('#exit').remove();
-        }
-
+    <script>
+        var csrf_token = '{{ csrf_token }}';
     </script>
-
 {% endblock %}
 
 <!-- Application's space -->
@@ -310,599 +58,658 @@
 
 	<article id="main-content">
 
-		<div class="pagetitle">RIS3 Innovation Maps</div>
-
-        <p/>
+        <h2>RIS3 Innovation Maps</h2>
 
         <!-- Nav Bar -->
-        <div class="stepwizard">
-            <div class="stepwizard-row">
-                <div class="stepwizard-step">
-                    <button id="0" type="button" class="step btn btn-primary btn-circle" onclick="step0()"><i class="fa fa-file-o"></i></button>
-                    <p id="stepTitle0" style="text-align: center" hidden>Data Selection</p>
-                </div>
-                <div class="stepwizard-step">
-                    <button id="1" type="button" class="step btn btn-default btn-circle" onclick="step1()"><i class="fa fa-table"></i></button>
-                    <p id="stepTitle1" style="text-align: center" hidden>Data Manipulation</p>
-                </div>
-                <div class="stepwizard-step">
-                    <button id="2" type="button" class="step btn btn-default btn-circle" onclick="step2()"><i class="fa fa-bar-chart"></i></button>
-                    <p id="stepTitle2" style="text-align: center" hidden>Data Visualisation</p>
+        <div id="timeline">
+            <nav class="stepwizard">
+                <ul class="nav stepwizard-row">
+                    <li class="stepwizard-step">
+                        <a class="btn btn-default btn-circle" href="#sources"><i class="fa fa-file-o"></i></a>
+                        <p style="text-align: center" hidden>Data Selection</p>
+                    </li>
+                    <li class="stepwizard-step">
+                        <a class="btn btn-default btn-circle" href="#data"><i class="fa fa-table"></i></a>
+                        <p style="text-align: center" hidden>Data Manipulation</p>
+                    </li>
+                    <li class="stepwizard-step">
+                        <a class="btn btn-default btn-circle" href="#visualisations"><i class="fa fa-bar-chart"></i></a>
+                        <p style="text-align: center" hidden>Data Visualisation</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div style="width: 100%">
+            <div style="float: right">
+                <div id="arrows">
+                    <a id="up"   class="btn btn-default btn-circle"><i class="fa fa-arrow-up"></i></a>
+                    <br>
+                    <a id="down" class="btn btn-default btn-circle"><i class="fa fa-arrow-down"></i></a>
                 </div>
             </div>
         </div>
 
-        <p/>
+        <a id="esc" class="btn btn-default btn-circle"><i class="fa fa-times"></i></a>
+        <!-- End Nav Bar -->
 
-        <div id="fileSelect" class="collapse" style="width:740px">
-            <h4>Data Gathering</h4>
-            <p>
-                Upload and analyse data from the private sector's R&D and innovation grant applications at both national and regional levels. <br/>
-                Uncover bottom-up information about new emerging businesses and technology trends as perceived by the private sector and ultimately identify key priorities for business innovation spending.
-            </p>
 
-            <p>
-                <a data-toggle="collapse" data-target="#ref" onclick="if(!r){$('#arrow').css({transform: 'rotate(180deg)'});}else{$('#arrow').removeAttr('style');}r=!r;">Data Template Reference <i id="arrow" class="fa fa-chevron-down"></i></a>
-                <div id="ref" class="collapse">
-                    <table class="table table-condensed table-hover">
-                        <thead>
-                            <tr>
-                                <th>Columns</th>
-                                <th>Format</th>
-                                <th>Example</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Grant Application Identifier</td>
-                                <td>Unique identifier</td>
-                                <td>"1234-XXXX-5"</td>
-                            </tr>
-                            <tr>
-                                <td>Region *</td>
-                                <td>NUTS Level 1</td>
-                                <td>"Scotland"</td>
-                            </tr>
-                            <tr>
-                                <td>Funding *</td>
-                                <td>Currency</td>
-                                <td>"999999.99"</td>
-                            </tr>
-                            <tr>
-                                <td>Business Area **</td>
-                                <td>OECD/Other</td>
-                                <td>"1."</td>
-                            </tr>
-                            <tr>
-                                <td>Technology Trend **</td>
-                                <td>NABS/Other</td>
-                                <td>"1.1."</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <span style="float: right;">&nbsp;&nbsp; ** Required for Heatmap </span>
-                    <span style="float: right;"> * Required for Bubble Map &nbsp;&nbsp;</span>
-
-                    <a href='{% url "innovationmaps_template" %}' target="_blank">Download Template - <i class="fa fa-file-o"></i></a>
+        <!-- Main Content -->
+        <div id="views" class="panel-group">
+            <div id="sources" class="collapse in">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="heading">Data Gathering</h4>
+                    </div>
+                    <p class="panel-body">
+                        Upload and analyse data from private sector's R&D and innovation grant applications at both
+                        national and regional levels. Uncover bottom-up information about new emerging business and
+                        technology trends as perceived by the private sector and ultimately identify key priorities for
+                        business innovation spending.
+                    </p>
                 </div>
-            </p>
-
-            <br/>
-
-            <div class="panel panel-default" style="margin:0 auto; width:50%">
-                <div class="panel-body">
-                    <label>Select File: </label>
-                    <div class="input-group">
-                        <label class="input-group-btn">
-                            <span class="btn btn-default">
-                                Browse: <input id="file-input" type="file" style="display: none;"/>
-                            </span>
-                        </label>
-                        <input id="file" class="form-control" type="text" readonly>
+                <br><br>
+                <div class="panel panel-default" style="width:50%;margin:auto;">
+                    <div class="panel-body">
+                        <label>Data Gathering Options:</label>
+                        <br><br>
+                        <div class="form-group">
+                            <a id="if" class="btn btn-default btn-circle" data-toggle="modal" data-target="#parse">
+                                <i class="fa fa-file"></i>
+                            </a>
+                            <label for="if">Select File</label>
+                            <p>
+                                Upload a file to be inserted into the current online spreadsheet to be processed and visualised among other data sources.
+                                <i class="fa fa-info-circle"></i>
+                                Download <a href="{% url 'innovationmaps_template' %}">Template</a> / <a href="{% url 'innovationmaps_example' %}">Demo. File</a>
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <a id="id" class="btn btn-default btn-circle" data-toggle="modal" data-target="#import_diag">
+                                <i class="fa fa-magic"></i>
+                            </a>
+                            <label for="id">Import Data</label>
+                            <p>
+                                Select classified sample data from <abbr title="Gateway to Research">GtR</abbr>(UK) and Tekes(FI).
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>Or skip:</label>
+                        </div>
+                        <div class="form-group">
+                            <a id="skip" class="btn btn-default btn-circle" href="#data">
+                                <i class="fa fa-share"></i>
+                            </a>
+                            <label for="skip">Skip</label>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="alert alert-info" role="alert" style="display: none">
+                <strong>Info</strong> Import Options hidden. <a onclick="toggle($('#t0'), 'sources')">Show Again</a>
+            </div>
 
-            <br/>
+            <hr>
 
-            <div style="float: right">Data Manipulation <button class="btn btn-default btn-circle" onclick="step1()"><i class="fa fa-arrow-right"></i></button></div>
-
-            <br/>
-
-        </div>
-
-        <!-- Data Parsing Modal -->
-        <div id="parseData" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <h4>File Settings</h4>
-
-                        <p>Preview of <span id="filePreview"></span><span style="float: right">Showing 1 Record</span></p>
-                        <div id="preview" style="width:100%;max-height:540px;overflow: auto;"></div>
-
-                        <hr/>
-
-                        <div class="form-group" style="text-align: center">
-                            <label>Region: </label>
-                            <select id="rIdx"></select>
-                            &emsp;
-                            <label>Amount Funded: </label>
-                            <select id="fIdx"></select>
-                        </div>
-
-                        <hr/>
-
-                        <h4>Heatmap Options</h4>
-                        <p style="text-align: center">
-                            Business Area vs. Technology Classification Matrix
-                        </p>
-                        <div class="form-group" style="text-align: center">
-                            <label>Use OECD <a href="http://www.oecd.org/about/" target="_blank"><i class="fa fa-info-circle" id="OECD"></i></a>/NABS <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=CL_NABS07&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC" target="_blank"><i class="fa fa-info-circle" id="NABS"></i></a>:</label> <input name="classification" type="radio" value="standard" checked/>&emsp;
-                            <label>Custom Classification <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM&StrGroupCode=CLASSIFIC&StrLanguageCode=EN" target="_blank"><i class="fa fa-info-circle" id="oClass"></i></a>:</label> <input name="classification" type="radio" value="custom"/>
-                            <script type="application/javascript">
-                                $("input[name='classification']").change(function(){
-                                    if ($(this).is(':checked') && $(this).val() == 'custom'){
-                                        $('#custom').show();
-                                    } else {
-                                        $('#custom').hide();
-                                    }
-                                });
-                            </script>
-                            <div id="custom" hidden>
-                                <label for="bFile">Business Area</label>             <input id="bFile" type="file" onchange="fileChange=true"/>
-                                <label for="tFile">Technology Classification</label> <input id="tFile" type="file" onchange="fileChange=true"/>
-                            </div>
-                        </div>
-
-                        <ul class="form-group" style="text-align: center">
-                            <li>    <label>Business Area: </label> <select id="bIdx"></select>  </li>
-                            <li>    <label>Technology Classification: </label> <select id="tIdx"></select>  </li>
-                        </ul>
-
-                        <button type="button" class="btn btn-primary"   data-dismiss="modal" onclick="
-                            if($('input[name=\'classification\']').val() != classification || fileChange) {
-                                updateClassification();
-                                classification = $('input[name=\'classification\']').val();
-                            }
-                            processData();
-                            step1();
-                        ">OK</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            <div id="data" class="collapse in">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="heading">Data Cleansing and Classification</h4>
+                    </div>
+                    <p class="panel-body">
+                        Classify projects by business area and technology trend.<br>
+                        Note: <i>the use of standard classifications is encouraged to allow for cross-regional and cross-country comparisons although custom classifications are also supported.</i>
+                    </p>
+                </div>
+                <br>
+                <div class="pull-right">
+                    Records per Page
+                    <select id="per_page" class="input-sm" style="border-color: transparent">
+                        <option value="16" selected>16</option>
+                        <option value="32">32</option>
+                        <option value="64">64</option>
+                        <option value="128">128</option>
+                        <option value="256">256</option>
+                    </select>
+                </div>
+                <br><br>
+                <i class="fa fa-info-circle" data-toggle="tooltip" title="Right click on a cell or heading for more options."></i>
+                <i id="valid" data-toggle="tooltip"></i>
+                <div id="spreadsheet"></div>
+                <br>
+                <div id="pagination">
+                    <div style="text-align: center">
+                        <button id="left" style="border-color: transparent"  class="btn btn-sm btn-default " onclick="$('#p').val(parseInt($('#p').val())-1).change()"><i class="fa fa-chevron-left"></i></button>
+                        Page <select id="p" onchange="changePage()" class="input-sm" style="border-color: transparent"></select>
+                        <button id="right" style="border-color: transparent" class="btn btn-sm btn-default " onclick="$('#p').val(parseInt($('#p').val())+1).change()"><i  class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-
-
-        <div id="dataEdit" class="collapse" style="width:740px">
-            <h4>Data Cleansing and Classification</h4>
-            <p>
-                Classify projects by business area and technology trend. Note: the use of standard classifications is encouraged to allow for cross-regional and cross-country comparisons although custom classifications are also supported.
-            </p>
-            <p>Read More:
-                <a href="http://ec.europa.eu/eurostat/web/nuts" target="_blank">Regions</a>,
-                <a href="https://www.ischool.utexas.edu/~darius/map_inov.pdf" target="_blank">Classifications</a>
-            </p>
-
-            <a style="float: right;" onclick="
-                $('body').append('<div id=\'overlay\' style=\'display: block\' onclick=\'exitFullscreen()\'></div>');
-                $('body').append('<button id=\'exit\' class=\'btn btn-default btn-circle\' style=\'position: absolute; top: 0; right: 0; z-index:4;\' onclick=\'exitFullscreen()\'><i class=\'fa fa-times\'></i></button>');
-                $('#spreadsheet').css({'z-index':3, 'max-height':$(window).height()-60, 'width':$(window).width()-60}).position({of: $('#overlay')});
-            ">Full Screen Mode: <i class="fa fa-window-maximize"></i></a>
-
-            <div id="spreadsheet" style="width: 100%; max-height: 540px; overflow: auto;"></div>
-
-            <br/>
-
-            <button class="btn btn-default btn-circle" onclick="step0()"><i class="fa fa-arrow-left"></i></button> Data Selection
-            <div style="float: right">Data Visualisation <button class="btn btn-default btn-circle" onclick="step2()"><i class="fa fa-arrow-right"></i></button></div>
-        </div>
-
-
-
-
-        <div id="plotEdit" class="collapse" style="width:740px">
-            <h4>Data Analysis and Policy Intelligence</h4>
-            <p>
-                Make use of visualisations to inform the smart specialisation process based on up-to-date, bottom-up private sector data.
-            </p>
-            <p>Read more:
-                <a href="https://www.ischool.utexas.edu/~darius/map_inov.pdf" target="_blank">Heatmaps</a>,
-                <a href="http://ec.europa.eu/eurostat/web/gisco/overview" target="_blank">Region-based Plots</a>
-            </p>
-
-            <div class="btn-group" style="display: table; margin: 0 auto;">
-                    <button id="hm" type="button" class="btn btn-sm btn-primary" onclick="geo=false;plotType();plot();"><i class="glyphicon glyphicon-th"></i><br/>Heatmap</button>
-                    <button id="ge" type="button" class="btn btn-sm btn-default" onclick="geo=true; plotType();plot();"><i class="glyphicon glyphicon-globe"></i><br/>Bubble Map</button>
+            <div class="alert alert-info" role="alert" style="display: none">
+                <strong>Info</strong> Spreadsheet hidden. <a onclick="toggle($('#t1'), 'data')">Show Again</a>
             </div>
 
-            <div id="graph" style="width: 740px; height: 540px;"></div>
+            <hr>
 
-            <br/>
+            <div id="visualisations" class="collapse in">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="heading">Policy Intelligence, Data Visualisation and Analysis</h4>
+                    </div>
+                    <p class="panel-body">
+                        Make use of visualisations to inform the smart specialisation process based on up-to-date, bottom-up private sector data.
+                    </p>
+                </div>
+                <br><br>
+                <div id="plot_options" class="btn-group" style="width: 100%; text-align: center;">
+                    <input id="heatmap" type="radio" name="type" value="heatmap" hidden checked><label for="heatmap"><i class="glyphicon glyphicon-th"></i> Heatmap</label></input> /
+                    <input id="regions" type="radio" name="type" value="regions" hidden>        <label for="regions"><i class="glyphicon glyphicon-globe"></i> Geo-Scatter Map</label></input>
+                </div>
 
-            <button class="btn btn-default btn-circle" onclick="step1()"><i class="fa fa-arrow-left"></i></button> Data Manipulation
+                <div style="float: left">
+                    <input id="standard" type="radio" name="bubble" value="standard" hidden checked><label for="standard"><i class="fa fa-table"></i> Standard</label> /
+                    <input id="bubble"   type="radio" name="bubble" value="bubble" hidden><label for="bubble"><i class="fa fa-circle-thin"></i> Bubble</label>
+                </div>
+
+
+
+                <div id="heatmap_options" style="float: right;">
+                    <label for="map_plot">Plot: </label>
+                    <select id="map_plot" onchange="plot()">
+                        <option value="count" selected> Project Count</option>
+                        <option value="sum"> Funding Amount</option>
+                    </select>
+                </div>
+
+                <br><br><br>
+
+                <div id="graph"></div>
+
+                <div class="panel panel-default collapse">
+                    <div style="padding: 10px">
+                        <a class="btn btn-default btn-circle" onclick="$(this).parent().parent().hide()" style="float: right">&times;</a>
+                    </div>
+                    <br>
+                    <div id="detail"></div>
+                </div>
+
+            </div>
+            <div class="alert alert-info" role="alert" style="display: none">
+                <strong>Info</strong> Graph hidden <a onclick="toggle($('#t2'), 'visualisations')">Show Again</a>
+            </div>
+
         </div>
-
-
-        <p/><p/>
-
+        <!-- End Main Content -->
 
     </article>
 
 	<aside id='sidebar'>
+        <div id="menu" style="width: 230px">
+            <!-- Menu Bar -->
+            <div id="app_settings" class="btn-group-vertical" role="group">
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-angle-left" style="float: left"></i> File
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Upload</li>
+                        <li class="divider"/>
+                        <li><a data-toggle="modal" data-target="#parse"><i class="fa fa-file"></i> Import File </a></li>
+                        <li class="divider"/>
+                        <li class="dropdown-header">Download</li>
+                        <li class="divider"/>
+                        <li><a onclick="save() "><i class="fa fa-save"></i> Save Data to File </a></li>
+    {#                    <li><a onclick="excel()"><i class="fa fa-file-excel-o"></i> Open in Excel </a></li>               #}
+                        <li><a data-toggle="modal" data-target="#save"><i class="fa fa-bar-chart"></i> Export Graph</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-angle-left" style="float: left"></i> Data
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Data Management</li>
+                        <li class="divider"/>
+                        <li><a data-toggle="modal" data-target="#import_diag"><i class="fa fa-magic"></i> Import Data </a></li>
+                        <li><a onclick="var conf = confirm('Erase all data?\nWarning! Data will be lost'); if(conf==true) { records=[]; loadSheet();}"><i class="fa fa-eraser"></i> Clear Data </a></li>
+                        <li class="divider"/>
+                        <li class="dropdown-header">Validation</li>
+                        <li class="divider"/>
+                        <li><a onclick="validate()"><i class="fa fa-question"></i> Validate Data </a></li>
+                    </ul>
+                </div>
 
-        <div id="fileMenu" class="collapse">
-             <a href='{% url "innovationmaps_pdf" %}' target="_blank">
-		        <button class="alt"> Download Guide  <i class="fa fa-file-pdf-o"></i></button>
-            </a>
-            <div></div>
-            <a href='{% url "innovationmaps_related" %}'>
-                <button> Read More  <i class="fa fa-book"></i></button>
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-angle-left" style="float: left"></i> View
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Toggle</li>
+                        <li class="divider"/>
+                        <li><a id="t0" onclick="toggle(this, 'sources')"><i class="fa fa-eye"></i> Import Options</a></li>
+                        <li><a id="t1" onclick="toggle(this, 'data')"><i class="fa fa-eye"></i> Spreadsheet</a></li>
+                        <li><a id="t2" onclick="toggle(this, 'visualisations')"><i class="fa fa-eye"></i> Graph</a></li>
+                        <li class="divider"/>
+                        <li class="dropdown-header">Maximise</li>
+                        <li class="divider"/>
+                        <li><a onclick="toggleFullscreen('spreadsheet')"><i id="spreadsheet_fi" class="fa fa-window-maximize"></i> Spreadsheet</a></li>
+                        <li><a onclick="toggleFullscreen('graph')"><i id="graph_fi" class="fa fa-window-maximize"></i> Graph</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-angle-left" style="float: left"></i> Design
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Graph Styling</li>
+                        <li class="divider"/>
+                        <li><a onclick="$('#opt_hm').show()" data-toggle="modal" data-target="#design"><i class="fa fa-table"></i> Colours</a></li>
+                        <li><a onclick="$('#opt_bm').show()" data-toggle="modal" data-target="#design"><i class="fa fa-globe"></i> Scaling</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Menu Bar -->
+
+            <br><br>
+
+            <div id="display_settings" class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Display Settings</h4>
+                    <a data-toggle="modal" data-target="#help_modal">Help <i class="fa fa-info-circle"></i></a>
+                    <div>View and interpret different formats of data.</div>
+                </div>
+                <div class="panel-body">
+                    <form id="settings">
+                        <label for="nuts">NUTS Level: </label>
+                        <select id="nuts">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3 selected="selected">3</option>
+                        </select>
+                        <div>Select appropriate NUTS-Level.</div>
+                        <hr>
+                        <label for="lang">Language</label>
+                        <select id="lang">
+                            <option value="" selected>Native</option>
+                            <option value="en">EN</option>
+                        </select>
+                        <div>View regions in chosen language.</div>
+                        <hr>
+                        <label for="codes">Show Codes</label>
+                        <input id="codes" type="checkbox" name="code" checked>
+                        <div>Toggle between class identifiers and readable descriptions.</div>
+                    </form>
+                </div>
+            </div>
+            <a href='{% url "innovationmaps_pdf" %}' target="_blank">
+                <button id="df" class="alt"> Download Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
             </a>
         </div>
+    </aside>
 
+    <!-- Modals -->
+    <div id="parse" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Import Data</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="step_1">
+                        <strong>Step 1</strong>: Click 'Browse' and locate a file to be uploaded.
+                        <br/>
+                        <label>Select File: </label>
+                        <div class="input-group">
+                            <label class="input-group-btn">
+                                <span class="btn btn-default">
+                                    Browse: <input type="file" onchange="loadFile(event)"/>
+                                </span>
+                            </label>
+                            <input id="file" class="form-control" type="text" readonly>
+                        </div>
+                        <br/>
+                        <div>
+                            <a data-toggle="collapse" data-target="#help">Help <i class="fa fa-info-circle"></i></a>
+                            <div id="help" class="panel-group collapse">
+                                <strong>Topics</strong>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a data-toggle="collapse" data-target="#requirements" data-parent="#help">
+                                            <i class="fa fa-table"></i>
+                                            Data Requirements
+                                        </a>
+                                    </div>
+                                    <div id="requirements" class="panel-body collapse">
+                                        The minimum data required in order to make full use of the mapping features of this application are as follows:
+                                        <li>Region of Implementation</li>
+                                        <li>Funding Amount</li>
+                                        <li>Business Area</li>
+                                        <li>Technology Classification</li>
+                                        In the scope of independently awarded grants by national or regional funding bodies.
+                                        See <a data-toggle="collapse" data-target="#formats">formats</a> for more information
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a data-toggle="collapse" data-target="#formats" data-parent="#help">
+                                            <i class="fa fa-file"></i>
+                                            Supported Formats
+                                        </a>
+                                    </div>
+                                    <div id="formats" class="panel-body collapse">
+                                        The following formats are supported by this application:
+                                        <li>Text (<i>*.csv, *.tsv, *.json</i>)</li>
+                                        <li>Excel (<i>*.xls, *.xlsx</i>)</li>
+                                        <li>Open Office (<i>*.odf</i>)</li>
+                                        Simply select the necessary delimiters and column specifiers once selecting a file.
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a data-toggle="collapse" data-target="#identifiers" data-parent="#help">
+                                            <i class="fa fa-hashtag"></i>
+                                            Standard Identifiers
+                                        </a>
+                                    </div>
+                                    <div id="identifiers" class="panel-body collapse">
+                                        <table class="table table-hover">
+                                            <tr> <td>Region</td>                    <td><abbr title="Nomenclature of territorial units for statistics">NUTS</abbr></td>                                  <td>Read More <a href="http://ec.europa.eu/eurostat/web/nuts" target="_blank">[1]</a></td> </tr>
+                                            <tr> <td>Business Area</td>             <td><abbr title="The Organisation for Economic Co-operation and Development">OECD</abbr></td>                        <td>Read More <a href="http://www.oecd.org/" target="_blank">[1]</a> <a href="http://www.oecd.org/sti/inno/MSTI_documentation_e.pdf" target="_blank">[2]</a></td> </tr>
+                                            <tr> <td>Technology Classification</td> <td><abbr title="Nomenclature for the Analysis and Comparison of Scientific Programmes and Budgets">NABS</abbr></td> <td>Read More <a href="http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=CL_NABS07&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC" target="_blank">[1]</a> <a href="http://www.oecd.org/science/inno/43299905.pdf" target="_blank">[2]</a></td> </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a data-toggle="collapse" data-target="#case" data-parent="#help">
+                                            <i class="fa fa-globe"></i>
+                                            Example Case Study
+                                        </a>
+                                    </div>
+                                    <div id="case" class="panel-body collapse">
+                                        <strong>The World Bank Group (2017).</strong> <i>Toward an innovative Poland: The entrepreneurial discovery process and business needs analysis.</i> The World Bank Group, <i>pp.29-30, 97-101.</i> <br/>
+                                        Available at:
+                                        <a href="http://www.worldbank.org/en/country/poland/publication/entrepreneurial-discovery-process-poland"><i class="fa fa-link"></i></a>
+                                        <a href="http://documents.worldbank.org/curated/en/801221468186841613/pdf/106148-REPLACEMENT-v2-English-REPORT-Web.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a> <br/>
+                                        Innovation Map Methodology including Case Study
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div id="dataMenu" class="panel panel-default collapse">
-            <div class="panel-body">
-                <label>Data Options</label>
-                <hr/>
-                <a id="settings" onclick="viewSettings()">Modify Settings <i class="fa fa-cogs"></i></a>
-                <br/>
-                <a id="exportData" onclick="$('#spreadsheet').jexcel('download')">Export Data <i class="fa fa-download"></i></a>
-                <hr/>
-                <div style="width:90%">
-                    <label>Column</label>    <input id="col" type="text" value="Select a Column" disabled="disabled"/>
-                    <div id="colActions"></div>
+                    </div>
+
+                    <div class="step_2">
+                        <hr/>
+
+                        <h4>Import Options</h4>
+                        <div> File Properties <br/><strong>Step 2</strong>: Select settings according to contents of the file provided. </div>
+                        <br/>
+                        <form id="import">
+                            <div class="form-inline">
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label" for="header">File Contains Headers</label>
+                                    <input id="headers" type="checkbox" checked>
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label" for="separator">Separator</label>
+                                    <select id="separator">
+                                        <option value=";" selected>;</option>
+                                        <option value=",">,</option>
+                                        <option value=" ">Space</option>
+                                        <option value="t">Tab</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="control-label" for="quote">Quote</label>
+                                    <select id="quote">
+                                        <option value='"' selected>"</option>
+                                        <option value="'">'</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+
+                        <br/>
+
+                        <hr/>
+
+                        <h4>File Preview</h4>
+                        <div>Inspect the contents of the file in order to make necessary corrections.<br/><strong>Step 3</strong>: Edit data as necessary.</div>
+                        <div id="preview"></div>
+                        <p style="float:right">* Only previewing first page of data</p>
+
+                        <hr/>
+
+                        <h4>Column Selection</h4>
+                        <div>Specify the columns from which to read the following properties.<br/><strong>Step 4</strong>: Select the necessary columns.</div>
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="col_r">Region(s)</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="col_r"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="col_f">Amount Funded</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="col_f"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="col_b">Business Area</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="col_b"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="col_t">Technology Classification</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="col_t"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button id="confirm" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" disabled>Insert <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="import" id="#overwrite" data-dismiss="modal" href="#">Overwrite</a></li>
+                            <li><a class="import" id="#append"    data-dismiss="modal" href="#">Append</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="import_diag" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Import Data</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Import pre-classified project data from GtR and Tekes. This data has been labelled with OECD and
+                        NABS codes chosen based on textual analysis of the published Abstracts and related texts.
+                    </p>
                     <hr/>
-                    <a onclick="headers.push(String.fromCharCode(65 + headers.length)); $('#spreadsheet').jexcel('insertColumn', 1, null); processData();"><i class='fa fa-plus'></i> Insert New Column</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="plotMenu" class="panel panel-default collapse">
-            <div class="panel-body">
-                <label>Plotting Options</label>
-                <hr/>
-                <a id="exportPlot" onclick="Plotly.downloadImage(document.getElementById('graph'), {
-                    filename: plotTitle,
-                    format: $('#format :selected').text(),
-                    height: 740, width: 540
-                });">Export as Image <i class="fa fa-download"></i></a>
-
-                <hr/>
-
-                <label>Title: </label>  <input type="text" id="title" value="Insert Title" onkeyup="plotTitle = this.value; Plotly.relayout(document.getElementById('graph'), {title: plotTitle});">
-                <br/>
-                <label>Format: </label> <select id="format"><option selected>png</option><option>jpeg</option><option>webp</option><option>svg</option></select>
-                <hr/>
-
-                <div id="geoMenu">
-                    <label for="sel1">Data: </label>
-                    <select class="form-control" id="sel1" onchange="plot();">
-                        <option value="p">Project Count</option>
-                        <option value="f">Funding Amount</option>
-                    </select>
-
-                    <label for="scale">Scale: </label>
-                    <input class="form-control" type="range" id="scale" value="0" min="-10" max="10" step="1">
-                    <p class="form-group" id="output">1.0x</p>
-                </div>
-
-                <hr>
-
-                <div>
-                    <label>Filter(s): <i class="fa fa-filter"></i></label>
-                    <a onclick="$('#filters').append('<div id=\'filter-'+noFilters+'\' class=\'panel panel-default\'><br/><label>Column: </label><select id=\'filterCol-'+noFilters+'\'></select><br/><select id=\'filterVal-'+noFilters+'\' multiple hidden></select></div>'); initFilter(noFilters); noFilters++"><i class="fa fa-plus-circle"></i></a>
+                    <Strong>* Optional</Strong>
                     <br/>
-                    <div id="filters"/>
+                    <button class="btn btn-default btn-circle" data-toggle="collapse" data-target="#filters"><i class="fa fa-filter"></i></button> Apply Filters
+                    <div id="filters" class="collapse">
+                        <strong>Filter by region:</strong> Select a NUTS level
+                        <select id="level">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                        </select>
+                         region.
+                        <br>
+                        <label for="region">Region</label>
+                        <input id="region">
+                        <hr>
+                        <strong>Filter by classification:</strong>
+                        <br>
+                        <label for="nabs_i">NABS</label>
+                        <input id="nabs_i">
+                        <label for="oecd_i">OECD</label>
+                        <input id="oecd_i">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal" onclick="getData()">Import</button>
+                    <button class="btn btn-danger"  data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
+    </div>
 
-	</aside>
+    <div id="save" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Save Graph</h4>
+                </div>
+                <div class="modal-body">
+                    <label for="filename">Filename</label><br>
+                    <input id="filename" type="text">
+                    <select id="format">
+                        <option value="png" selected>*.png</option>
+                        <option value="jpeg">*.jpg, *.jpeg</option>
+                    </select>
+                    <br><br>
+                    <label for="dimensions">Dimensions</label>
+                    <div id="dimensions" class="form-group">
+                        <input name="width" type="number" min="0" max="1440" value="740">px ×
+                        <input name="height" type="number" min="0" max="1080" value="540">px
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" onclick="saveGraph()">Save</button>
+                    <button class="btn btn-danger"  data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="design" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Design</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="opt_hm" hidden>
+                        <h4>Colorscale</h4>
+                        <br>
+                        <div id="slider"></div>
+                        <br><p>Double click on the colourbar to add a new colour to the scale.</p><br>
+                        <label>Select Defaults: </label>
+                        <select onchange="switch(this.value){case 'gs': values=greys.slice(); break; case 'r': values=reds.slice(); break; case 'g': values=greens.slice(); break; case 'b': values = blues.slice(); break; case 'hmc': values = hotMildCool.slice(); break; case 't': values = traffic.slice(); break; case 'm': values = magma.slice(); break; case 'v': values = viridis.slice();} initColorscale(); renderGradient(); plot();">
+                            <option></option>
+                            <option value="gs">Greyscale</option>
+                            <option disabled/>
+                            <option value="r">Reds</option>
+                            <option value="g">Greens</option>
+                            <option value="b">Blues</option>
+                            <option disabled/>
+                            <option value="hmc">Temperature</option>
+                            <option value="t">Traffic</option>
+                            <option disabled/>
+                            <option value="v">Viridis</option>
+                            <option value="m">Magma</option>
+                        </select>
+
+                    </div>
+                    <div id="opt_bm" hidden>
+                        <label for="scale">Bubble Scale: </label>
+                        <input id="scale" type="range" value="0" min="-9" max="10" step="1">
+                        <p id="output">1×</p>
+                        <p>Resize bubble's with a fixed ratio preserving the distribution. Useful when zooming in on Regions of interest.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="help_modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Help</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>NUTS-Levels</h4>
+                    <p>The NUTS classification (Nomenclature of territorial units for statistics) is a hierarchical system for dividing up the economic territory of the EU for the purpose of:</p>
+                    <ul>
+                        <li>The collection, development and harmonisation of European regional statistics</li>
+                        <li>
+                            Socio-economic analyses of the regions
+                            <ul>
+                                <li>NUTS 1: major socio-economic regions</li>
+                                <li>NUTS 2: basic regions for the application of regional policies</li>
+                                <li>NUTS 3: small regions for specific diagnoses </li>
+                            </ul>
+                        </li>
+                        <li>Framing of EU regional policies.</li>
+                    </ul>
+                    <br/>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Description</th>
+                                <th>Example(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*0</td>
+                                <td>Country Level (* ISO 3166-1 alpha-2 codes)</td>
+                                <td>UK<br>FI</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Major socio-economic regions</td>
+                                <td>UKI (London)<br>FI1 (Mainland Finland)</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Basic regions for the application of regional policies</td>
+                                <td>UKI3 (Inner London West)<br>FI1B (Helsinki-Uusimaa)</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Small regions for specific diagnoses</td>
+                                <td>UKI31 (Camdem and City of London)<br>FI1B1 (Helsinki-Uusimaa)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <p>For more information: <a href="http://ec.europa.eu/eurostat/web/nuts" target="_blank"><i class="fa fa-external-link"></i></a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modals -->
 
 </div>
 
-<script type="application/javascript">
-    // Read User File
-    document.getElementById('file-input').addEventListener('change', function(e) {
-        var file = e.target.files[0];
-        if (!file) return;
-        $('#file').val(file.name);
-        $('#filePreview').html(file.name);
-        plotTitle = file.name.replace(/\.[^/.]+$/, '');
-        $('#title').attr('value', plotTitle);
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            csv = $.csv.toArrays(e.target.result);
-            init();
-        };
-        reader.readAsText(file);
-    }, false);
-
-    function init() {
-        headers = csv[0];
-        records = csv.slice(1);
-
-        edited = true;
-
-        viewSettings();
-    }
-
-    function viewSettings() {
-        $('#preview').jexcel({
-            colHeaders: [].concat(headers),
-            data: records.slice(0,1)
-        });
-
-        // Show column options
-        $('#rIdx').append("<option value='new'>Create New...</option>");
-        $('#fIdx').append("<option value='new'>Create New...</option>");
-        $('#bIdx').append("<option value='new'>Create New...</option>");
-        $('#tIdx').append("<option value='new'>Create New...</option>");
-
-        $.each(headers, function (idx, header) {
-            $('#rIdx').append("<option value=" + idx + ">" + header + "</option>");
-            $('#fIdx').append("<option value=" + idx + ">" + header + "</option>");
-            $('#bIdx').append("<option value=" + idx + ">" + header + "</option>");
-            $('#tIdx').append("<option value=" + idx + ">" + header + "</option>");
-
-            //TODO Improve Auto-detect
-            if(header.toLowerCase()=="region")      { rIdx = idx; $('#rIdx').val(idx); }
-            if(header.toLowerCase()=="awardpounds") { fIdx = idx; $('#fIdx').val(idx); }
-            if(header.toLowerCase()=="oecd")        { bIdx = idx; $('#bIdx').val(idx); }
-            if(header.toLowerCase()=="nabs")        { tIdx = idx; $('#tIdx').val(idx); }
-        });
-
-        // Parse options before proceeding
-        $('#parseData').modal('show');
-    }
-
-    function processData() {
-        //Add new Columns if necessary
-        if($('#rIdx :selected').val()=="new"){
-            headers.push('Region'); records.forEach(function(r){r.push('')});
-            rIdx = headers.length-1;  $('#rIdx').val(rIdx);
-        }
-        if($('#fIdx :selected').val()=="new"){
-            headers.push('Funding Amount'); records.forEach(function(r){r.push('')});
-            fIdx = headers.length-1;  $('#fIdx').val(fIdx);
-        }
-        if($('#bIdx :selected').val()=="new"){
-            headers.push('OECD');   records.forEach(function(r){r.push('')});
-            bIdx = headers.length-1;  $('#bIdx').val(bIdx);
-        }
-        if($('#tIdx :selected').val()=="new"){
-            headers.push('NABS');   records.forEach(function(r){r.push('')});
-            tIdx = headers.length-1;  $('#tIdx').val(tIdx);
-        }
-
-        var columns = headers.map(function (val, idx) {
-            if (idx == tIdx)      return {type: 'dropdown', source: technology.map(function (val) { return {"id": val.chapter,     "name": val.topic}; })};
-            else if (idx == bIdx) return {type: 'dropdown', source:   business.map(function (val) { return {"id": val.chapter,     "name": val.topic}; })};
-            else                  return {type: 'text'};
-        });
-
-        $('#spreadsheet').jexcel({
-            colHeaders: [].concat(headers),
-            columns: columns,
-            data: records,
-            onchange: plot
-        });
-
-        $.each(records, function(idx, record){
-            if(!regionDes.includes(record[rIdx].toLowerCase())){
-                $('#' + rIdx + "-" + idx).css('background-color', 'rgba(255,0,0,0.2);');
-            }
-        });
-
-
-        $('td[id^="col-"]').on("mouseup", function() {
-            var col = $(this).html();
-            var id = $(this).attr('id').replace('col-','');
-            $('#col').attr("disabled", false).val(col).keyup(function() {
-                headers[id] = this.value;
-                $('#spreadsheet').jexcel('setHeader', id, this.value);
-            });
-            $('#colActions').html("<label>Actions</label><br/><a onclick='headers.splice(" + id + ", 1); records.forEach(function(record){record.splice(" + id + ", 1);}); processData();'><i class='fa fa-times'></i> Remove Column</a>");
-        });
-    }
-
-    function updateClassification() {
-        if($('input[type="radio"][name="classification"]:checked').val() == "standard") {
-            // Load OECD/NABS classifications
-            $.ajax({ url: "{% static 'data/OECD.csv' %}", success: function(content) {   business = $.csv.toObjects(content); }, async: false}),
-            $.ajax({ url: "{% static 'data/NABS.csv' %}", success: function(content) { technology = $.csv.toObjects(content); }, async: false})
-        } else {
-            //Load custom classification
-            //BUSINESS
-            var file = $('#bFile')[0].files[0];
-            if (!file) return;
-            var reader = new FileReader(); reader.onload = function(e) { business = $.csv.toObjects(e.target.result); };
-            reader.readAsText(file);
-
-            //TECHNOLOGY
-            file = $('#tFile')[0].files[0];
-            if (!file) return;
-            var reader2 = new FileReader(); reader2.onload = function(e) { technology = $.csv.toObjects(e.target.result); };
-            reader2.readAsText(file);
-        }
-
-        x = $.map(  business, function(val) { return val.chapter; });
-        y = $.map(technology, function(val) { return val.chapter; });
-    }
-
-    function initFilter(id) {
-        $('#filter-' + id).append('<br/><a onclick="selectAll('+id+'); plot();">Select All <i class=\'fa fa-check-square-o\'></i></a>');
-        $('#filter-' + id).append('<br/><a onclick="$(\'#filter-' + id + '\').remove();$(\'#filterVal-' + id + '\').select2(\'destroy\'); plot();">Remove Filter <i class=\'fa fa-minus-circle\'></i></a>');
-        $('#filterCol-' + id).html("<option value=-1></option>" + headers.map(function(header, idx){ return "<option value=" + idx + ">" + header + "</option>" }));
-        $('#filterCol-' + id).change(function() {
-            var fIdx = $(this).val();
-            if(fIdx > -1) {
-                $('#filterVal-' + id).empty();
-                var unique = arrayColumn(records, fIdx).filter((v, i, a) => a.indexOf(v) === i);
-                var uniqueOpt = unique.map(function(val, idx){ return {id: idx, text: val} });
-                $('#filterVal-' + id).select2({ data: uniqueOpt }).show();
-            } else {
-                $('#filterVal-' + id).hide();
-            }
-        });
-        $('#filterVal-' + id).change(function(){ plot() });
-    }
-
-    function selectAll(id) {
-        $('#filterVal-' + id).val($('#filterVal-' + id + ' option').map(function(){return this.value})).trigger('change');
-    }
-
-    /* Helper Functions for plotting */
-    const arrayColumn = (arr, n) => arr.map(x=>x[n]);
-
-    function matrix(rows, cols, defaultValue) {
-      var arr = [];
-      for(var i=0; i < rows; i++) {
-          arr.push([]);
-          arr[i].push(new Array(cols));
-          for(var j=0; j < cols; j++)
-            arr[i][j] = defaultValue;
-      }
-      return arr;
-    }
-    Array.prototype.scaleBetween = function(scaledMin, scaledMax) {
-        var max = Math.max.apply(Math, this);
-        var min = Math.min.apply(Math, this);
-        return this.map(num => (scaledMax-scaledMin)*(num-min)/(max-min)+scaledMin);
-    }
-
-    function plot() {
-        edited = true;
-
-        if(!geo) {
-            $('#geoMenu').hide();
-
-            //Plot heatmap
-            z = matrix(technology.length, business.length, 0);
-
-            records.forEach(function (e) {
-                var xId = technology.findIndex(i => i.chapter === e[tIdx]);
-                var yId =   business.findIndex(i => i.chapter === e[bIdx]);
-
-                if(xId > -1 && yId > -1){
-                    var filter = $('select[id^="filterCol-"]').map(function() {
-                        var id = $(this).attr('id').replace('filterCol-', '');
-                        return ($(this).val() == -1 || $('#filterVal-' + id + ' :selected').text() == "" || ($(this).val() > -1 && $('#filterVal-' + id + ' :selected').text().includes(e[$(this).val()])))
-                    });
-                    var b = true; $.each(filter, function(k,v){ b &= v; });
-                    if(b)
-                        z[xId][yId]++;
-                }
-            });
-
-            var data = [{
-                type: 'heatmap',
-                x: x,
-                y: y,
-                z: z
-            }];
-
-            var layout = {
-                title: plotTitle,
-                xaxis: {
-                    title: headers[tIdx],
-                    type: 'category'
-                },
-                yaxis: {
-                    title: headers[bIdx],
-                    type: 'category'
-                }
-            };
-
-            Plotly.newPlot('graph', data, layout, {displaylogo: false});
-
-        } else {
-            //Plot geo-scatter
-            $('#geoMenu').show();
-            var lab = [];
-
-            z = new Array(regionLab.length).fill(0);
-
-            if (rIdx > -1)  //Region column no. provided
-                records.forEach(function (e) {
-                    var idx = regionDes/*Lab*/.indexOf(e[rIdx].toLowerCase());
-
-                    var filter = $('select[id^="filterCol-"]').map(function() {
-                        var id = $(this).attr('id').replace('filterCol-', '');
-                        return ($(this).val() == -1 || $('#filterVal-' + id + ' :selected').text() == "" || ($(this).val() > -1 && $('#filterVal-' + id + ' :selected').text().includes(e[$(this).val()])))
-                    });
-                    var b = true; $.each(filter, function(k,v){ b &= v; });
-                    if(b) {
-                        if (idx > -1 && $('#sel1').val() == "p") {
-                            z[idx]++; // Project Count
-                        } else if (idx > -1 && $('#sel1').val() == "f") {
-                            var c = parseInt(e[fIdx]);
-                            if (!isNaN(c))
-                                z[idx] += c;
-                        }
-                    }
-                });
-
-            for (var i = 0; i < z.length; i++)
-                lab[i] = regionLab[i] + ", " + z[i];
-
-            /* Rescale for plotting */
-            z = z.scaleBetween(0, 100);
-
-            /* Slider Event Listener */
-            $('#scale').change(function(){
-                var s =  (this.value < 0) ? (1 - Math.abs(this.value * 0.1)).toFixed(1) : (this.value == 0) ? 1 : this.value;
-                document.getElementById('output').innerHTML = s + 'x';
-                Plotly.restyle('graph', {marker: {size: z.map(e => e*s), color: z, line:{color: 'black', width: 1}}});
-            });
-
-            var data = [{
-                type: 'scattergeo',
-                mode: 'markers',
-                lat: regionLat,
-                lon: regionLon,
-                hoverinfo: 'text',
-                text: lab,
-                marker: {
-                    size: z,
-                    color: z,
-                    line: {
-                        color: 'black',
-                        width: 1
-                    },
-                    showscale: true,
-                    colorbar: {
-                        title: 'Distribution',
-                        ticksuffix: '%',
-                        showticksuffix: 'last'
-                    }
-                }
-            }];
-
-            var layout = {
-                title: plotTitle,
-                showlegend: false,
-                geo: {
-                    scope: 'europe',
-                    projection: {
-                        type: 'miller'
-                    },
-                    showland: true,
-                    landcolor: 'rgb(217, 217, 217)'
-                }
-            };
-
-            Plotly.newPlot('graph', data, layout, {displaylogo: false});
-        }
-    }
-</script>
 
 <!-- Application's space -->
 {% endblock %}

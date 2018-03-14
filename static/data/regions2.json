@@ -1,0 +1,1934 @@
+[
+  {
+    "id": "BE10",
+    "name": "Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest",
+    "en": "Brussels Region",
+    "lat": 50.850346,
+    "lon": 4.351721
+  },
+  {
+    "id": "BE21",
+    "name": "Prov. Antwerpen",
+    "en": "Antwerp",
+    "lat": 51.219448,
+    "lon": 4.402464
+  },
+  {
+    "id": "BE22",
+    "name": "Prov. Limburg (BE)",
+    "en": "Limburg",
+    "lat": 50.973897,
+    "lon": 5.341968
+  },
+  {
+    "id": "BE23",
+    "name": "Prov. Oost-Vlaanderen",
+    "en": "East Flanders",
+    "lat": 51.03621,
+    "lon": 3.737312
+  },
+  {
+    "id": "BE24",
+    "name": "Prov. Vlaams-Brabant",
+    "en": "Flemish Brabant",
+    "lat": 50.881543,
+    "lon": 4.564597
+  },
+  {
+    "id": "BE25",
+    "name": "Prov. West-Vlaanderen",
+    "en": "West Flanders",
+    "lat": 51.053602,
+    "lon": 3.145794
+  },
+  {
+    "id": "BE31",
+    "name": "Prov. Brabant Wallon",
+    "en": "Walloon Brabant",
+    "lat": 50.633241,
+    "lon": 4.524315
+  },
+  {
+    "id": "BE32",
+    "name": "Prov. Hainaut",
+    "en": "Hainaut",
+    "lat": 50.525708,
+    "lon": 4.062102
+  },
+  {
+    "id": "BE33",
+    "name": "Prov. Liège",
+    "en": "Liège",
+    "lat": 50.632557,
+    "lon": 5.579666
+  },
+  {
+    "id": "BE34",
+    "name": "Prov. Luxembourg (BE)",
+    "en": "Luxembourg",
+    "lat": 50.054689,
+    "lon": 5.467698
+  },
+  {
+    "id": "BE35",
+    "name": "Prov. Namur",
+    "en": "Namur",
+    "lat": 50.467388,
+    "lon": 4.871985
+  },
+  {
+    "id": "BG31",
+    "name": "Северозападен (Severozapaden)",
+    "en": "North-West",
+    "lat": 42.733883,
+    "lon": 25.48583
+  },
+  {
+    "id": "BG32",
+    "name": "Северен Централен (Severen Tsentralen)",
+    "en": "North-Central",
+    "lat": 43.080913,
+    "lon": 25.609863
+  },
+  {
+    "id": "BG33",
+    "name": "Североизточен (Severoiztochen)",
+    "en": "North-East",
+    "lat": 42.733883,
+    "lon": 25.48583
+  },
+  {
+    "id": "BG34",
+    "name": "Югоизточен (Yugoiztochen)",
+    "en": "South-East",
+    "lat": 42.733883,
+    "lon": 25.48583
+  },
+  {
+    "id": "BG41",
+    "name": "Югозападен (Yugozapaden)",
+    "en": "South-West",
+    "lat": 42.0185,
+    "lon": 23.07744
+  },
+  {
+    "id": "BG42",
+    "name": "Южен Централен (Yuzhen Tsentralen)",
+    "en": "South-Central",
+    "lat": 42.122733,
+    "lon": 24.736554
+  },
+  {
+    "id": "CZ01",
+    "name": "Praha",
+    "en": "Prague",
+    "lat": 50.075538,
+    "lon": 14.4378
+  },
+  {
+    "id": "CZ02",
+    "name": "Střední Čechy",
+    "en": "Central Bohemia",
+    "lat": 49.878222,
+    "lon": 14.936296
+  },
+  {
+    "id": "CZ03",
+    "name": "Jihozápad",
+    "en": "South-West",
+    "lat": 48.945779,
+    "lon": 14.441606
+  },
+  {
+    "id": "CZ04",
+    "name": "Severozápad",
+    "en": "North-West",
+    "lat": 49.817492,
+    "lon": 15.472962
+  },
+  {
+    "id": "CZ05",
+    "name": "Severovýchod",
+    "en": "North-East",
+    "lat": 49.817492,
+    "lon": 15.472962
+  },
+  {
+    "id": "CZ06",
+    "name": "Jihovýchod",
+    "en": "South-East",
+    "lat": 48.954453,
+    "lon": 16.76769
+  },
+  {
+    "id": "CZ07",
+    "name": "Střední Morava",
+    "en": "Central Moravia",
+    "lat": 49.170902,
+    "lon": 16.594493
+  },
+  {
+    "id": "CZ08",
+    "name": "Moravskoslezsko",
+    "en": "Moravian Silesia",
+    "lat": 49.730533,
+    "lon": 18.233264
+  },
+  {
+    "id": "DK01",
+    "name": "Hovedstaden",
+    "en": "Capital (region)",
+    "lat": 55.675181,
+    "lon": 12.549326
+  },
+  {
+    "id": "DK02",
+    "name": "Sjælland",
+    "en": "Zealand",
+    "lat": 55.463252,
+    "lon": 11.721498
+  },
+  {
+    "id": "DK03",
+    "name": "Syddanmark",
+    "en": "South Denmark",
+    "lat": 55.330771,
+    "lon": 9.09249
+  },
+  {
+    "id": "DK04",
+    "name": "Midtjylland",
+    "en": "Central Jutland",
+    "lat": 56.302139,
+    "lon": 9.302777
+  },
+  {
+    "id": "DK05",
+    "name": "Nordjylland",
+    "en": "North Jutland",
+    "lat": 56.830742,
+    "lon": 9.493053
+  },
+  {
+    "id": "DE11",
+    "name": "Stuttgart",
+    "en": "Stuttgart",
+    "lat": 48.775846,
+    "lon": 9.182932
+  },
+  {
+    "id": "DE12",
+    "name": "Karlsruhe",
+    "en": "Karlsruhe",
+    "lat": 49.00689,
+    "lon": 8.403653
+  },
+  {
+    "id": "DE13",
+    "name": "Freiburg",
+    "en": "Freiburg",
+    "lat": 47.999008,
+    "lon": 7.842104
+  },
+  {
+    "id": "DE14",
+    "name": "Tübingen",
+    "en": "Tübingen",
+    "lat": 48.521636,
+    "lon": 9.057645
+  },
+  {
+    "id": "DE21",
+    "name": "Oberbayern",
+    "en": "Upper Bavaria",
+    "lat": 47.952087,
+    "lon": 11.78773
+  },
+  {
+    "id": "DE22",
+    "name": "Niederbayern",
+    "en": "Lower Bavaria",
+    "lat": 48.78965,
+    "lon": 13.020806
+  },
+  {
+    "id": "DE23",
+    "name": "Oberpfalz",
+    "en": "Oberpfalz",
+    "lat": 49.555423,
+    "lon": 12.038095
+  },
+  {
+    "id": "DE24",
+    "name": "Oberfranken",
+    "en": "Oberfranken",
+    "lat": 49.959982,
+    "lon": 11.321631
+  },
+  {
+    "id": "DE25",
+    "name": "Mittelfranken",
+    "en": "Mittelfranken",
+    "lat": 49.363327,
+    "lon": 10.650632
+  },
+  {
+    "id": "DE26",
+    "name": "Unterfranken",
+    "en": "Unterfranken",
+    "lat": 50.078022,
+    "lon": 10.051193
+  },
+  {
+    "id": "DE27",
+    "name": "Schwaben",
+    "en": "Swabia",
+    "lat": 48.381467,
+    "lon": 10.700841
+  },
+  {
+    "id": "DE30",
+    "name": "Berlin",
+    "en": "Berlin",
+    "lat": 52.520007,
+    "lon": 13.404954
+  },
+  {
+    "id": "DE40",
+    "name": "Brandenburg",
+    "en": "Brandenburg",
+    "lat": 52.131392,
+    "lon": 13.216249
+  },
+  {
+    "id": "DE50",
+    "name": "Bremen",
+    "en": "Bremen",
+    "lat": 53.079296,
+    "lon": 8.801694
+  },
+  {
+    "id": "DE60",
+    "name": "Hamburg",
+    "en": "Hamburg",
+    "lat": 53.551085,
+    "lon": 9.993682
+  },
+  {
+    "id": "DE71",
+    "name": "Darmstadt",
+    "en": "Darmstadt",
+    "lat": 49.872825,
+    "lon": 8.651193
+  },
+  {
+    "id": "DE72",
+    "name": "Gießen",
+    "en": "Giessen",
+    "lat": 50.584051,
+    "lon": 8.678403
+  },
+  {
+    "id": "DE73",
+    "name": "Kassel",
+    "en": "Kassel",
+    "lat": 51.312711,
+    "lon": 9.479746
+  },
+  {
+    "id": "DE80",
+    "name": "Mecklenburg-Vorpommern",
+    "en": "Mecklenburg-Western Pomerania",
+    "lat": 53.612651,
+    "lon": 12.429595
+  },
+  {
+    "id": "DE91",
+    "name": "Braunschweig",
+    "en": "Braunschweig",
+    "lat": 52.268874,
+    "lon": 10.52677
+  },
+  {
+    "id": "DE92",
+    "name": "Hannover",
+    "en": "Hannover",
+    "lat": 52.375892,
+    "lon": 9.73201
+  },
+  {
+    "id": "DE93",
+    "name": "Lüneburg",
+    "en": "Lüneburg",
+    "lat": 53.246421,
+    "lon": 10.411518
+  },
+  {
+    "id": "DE94",
+    "name": "Weser-Ems",
+    "en": "Weser-Ems",
+    "lat": 53.23175,
+    "lon": 8.694753
+  },
+  {
+    "id": "DEA1",
+    "name": "Düsseldorf",
+    "en": "Düsseldorf",
+    "lat": 51.227741,
+    "lon": 6.773456
+  },
+  {
+    "id": "DEA2",
+    "name": "Köln",
+    "en": "Cologne",
+    "lat": 50.937531,
+    "lon": 6.960279
+  },
+  {
+    "id": "DEA3",
+    "name": "Münster",
+    "en": "Münster",
+    "lat": 51.960665,
+    "lon": 7.626135
+  },
+  {
+    "id": "DEA4",
+    "name": "Detmold",
+    "en": "Detmold",
+    "lat": 51.938478,
+    "lon": 8.868638
+  },
+  {
+    "id": "DEA5",
+    "name": "Arnsberg",
+    "en": "Arnsberg",
+    "lat": 51.407338,
+    "lon": 8.052771
+  },
+  {
+    "id": "DEB1",
+    "name": "Koblenz",
+    "en": "Koblenz",
+    "lat": 50.356943,
+    "lon": 7.588996
+  },
+  {
+    "id": "DEB2",
+    "name": "Trier",
+    "en": "Trier",
+    "lat": 49.749992,
+    "lon": 6.637143
+  },
+  {
+    "id": "DEB3",
+    "name": "Rheinhessen-Pfalz",
+    "en": "Rheinhessen-Pfalz",
+    "lat": 50.118346,
+    "lon": 7.308953
+  },
+  {
+    "id": "DEC0",
+    "name": "Saarland",
+    "en": "Saarland",
+    "lat": 49.396423,
+    "lon": 7.022961
+  },
+  {
+    "id": "DED2",
+    "name": "Dresden",
+    "en": "Dresden",
+    "lat": 51.050409,
+    "lon": 13.737262
+  },
+  {
+    "id": "DED4",
+    "name": "Chemnitz",
+    "en": "Chemnitz",
+    "lat": 50.827845,
+    "lon": 12.92137
+  },
+  {
+    "id": "DED5",
+    "name": "Leipzig",
+    "en": "Leipzig",
+    "lat": 51.339696,
+    "lon": 12.373075
+  },
+  {
+    "id": "DEE0",
+    "name": "Sachsen-Anhalt",
+    "en": "Saxony-Anhalt",
+    "lat": 51.950265,
+    "lon": 11.692273
+  },
+  {
+    "id": "DEF0",
+    "name": "Schleswig-Holstein",
+    "en": "Schleswig-Holstein",
+    "lat": 54.219367,
+    "lon": 9.696117
+  },
+  {
+    "id": "DEG0",
+    "name": "Thüringen",
+    "en": "Thuringia",
+    "lat": 51.010989,
+    "lon": 10.845346
+  },
+  {
+    "id": "EE00",
+    "name": "Eesti",
+    "en": "Estonia",
+    "lat": 58.595272,
+    "lon": 25.013607
+  },
+  {
+    "id": "IE01",
+    "name": "Border, Midland and Western",
+    "en": "Border, Midland and Western",
+    "lat": 53.901934,
+    "lon": -8.578889
+  },
+  {
+    "id": "IE02",
+    "name": "Southern and Eastern",
+    "en": "Southern and Eastern",
+    "lat": 52.261802,
+    "lon": -7.113739
+  },
+  {
+    "id": "EL30",
+    "name": "Aττική (Attiki)",
+    "en": "Attica",
+    "lat": 38.045757,
+    "lon": 23.858474
+  },
+  {
+    "id": "EL41",
+    "name": "Βόρειο Αιγαίο (Voreio Aigaio)",
+    "en": "North Aegean",
+    "lat": 37.075546,
+    "lon": 25.520736
+  },
+  {
+    "id": "EL42",
+    "name": "Νότιο Αιγαίο (Notio Aigaio)",
+    "en": "South Aegean",
+    "lat": 37.08553,
+    "lon": 25.148922
+  },
+  {
+    "id": "EL43",
+    "name": "Κρήτη (Kriti)",
+    "en": "Crete",
+    "lat": 35.240117,
+    "lon": 24.809269
+  },
+  {
+    "id": "EL51",
+    "name": "Aνατολική Μακεδονία, Θράκη (Anatoliki Makedonia, Thraki)",
+    "en": "East Macedonia, Thrace",
+    "lat": 41.129513,
+    "lon": 24.887719
+  },
+  {
+    "id": "EL52",
+    "name": "Κεντρική Μακεδονία (Kentriki Makedonia)",
+    "en": "Central Macedonia",
+    "lat": 40.621173,
+    "lon": 23.191802
+  },
+  {
+    "id": "EL53",
+    "name": "Δυτική Μακεδονία (Dytiki Makedonia)",
+    "en": "West Macedonia",
+    "lat": 40.300406,
+    "lon": 21.790356
+  },
+  {
+    "id": "EL54",
+    "name": "Ήπειρος (Ipeiros)",
+    "en": "Epirus",
+    "lat": 39.570641,
+    "lon": 20.764284
+  },
+  {
+    "id": "EL61",
+    "name": "Θεσσαλία (Thessalia)",
+    "en": "Thessaly",
+    "lat": 39.610289,
+    "lon": 22.047637
+  },
+  {
+    "id": "EL62",
+    "name": "Ιόνια Νησιά (Ionia Nisia)",
+    "en": "Ionian Islands",
+    "lat": 37.96949,
+    "lon": 21.380237
+  },
+  {
+    "id": "EL63",
+    "name": "Δυτική Ελλάδα (Dytiki Ellada)",
+    "en": "Western Greece",
+    "lat": 38.51155,
+    "lon": 21.570679
+  },
+  {
+    "id": "EL64",
+    "name": "Στερεά Ελλάδα (Sterea Ellada)",
+    "en": "Continental Greece",
+    "lat": 36.442123,
+    "lon": 28.220359
+  },
+  {
+    "id": "EL65",
+    "name": "Πελοπόννησος (Peloponnisos)",
+    "en": "Peloponnese",
+    "lat": 37.507947,
+    "lon": 22.37349
+  },
+  {
+    "id": "ES11",
+    "name": "Galicia",
+    "en": "Galicia",
+    "lat": 42.575055,
+    "lon": -8.133856
+  },
+  {
+    "id": "ES12",
+    "name": "Principado de Asturias",
+    "en": "Asturias",
+    "lat": 43.361395,
+    "lon": -5.859327
+  },
+  {
+    "id": "ES13",
+    "name": "Cantabria",
+    "en": "Cantabria",
+    "lat": 43.18284,
+    "lon": -3.987843
+  },
+  {
+    "id": "ES21",
+    "name": "País Vasco",
+    "en": "Basque Country",
+    "lat": 42.989625,
+    "lon": -2.618927
+  },
+  {
+    "id": "ES22",
+    "name": "Comunidad Foral de Navarra",
+    "en": "Navarre",
+    "lat": 42.695391,
+    "lon": -1.676069
+  },
+  {
+    "id": "ES23",
+    "name": "La Rioja",
+    "en": "Rioja",
+    "lat": 42.287073,
+    "lon": -2.539603
+  },
+  {
+    "id": "ES24",
+    "name": "Aragón",
+    "en": "Aragon",
+    "lat": 41.597628,
+    "lon": -0.905662
+  },
+  {
+    "id": "ES30",
+    "name": "Comunidad de Madrid",
+    "en": "Madrid",
+    "lat": 40.416775,
+    "lon": -3.70379
+  },
+  {
+    "id": "ES41",
+    "name": "Castilla y León",
+    "en": "Castile and Leon",
+    "lat": 41.835682,
+    "lon": -4.397636
+  },
+  {
+    "id": "ES42",
+    "name": "Castilla-La Mancha",
+    "en": "Castile-La Mancha",
+    "lat": 39.279561,
+    "lon": -3.097702
+  },
+  {
+    "id": "ES43",
+    "name": "Extremadura",
+    "en": "Extremadura",
+    "lat": 39.493739,
+    "lon": -6.067919
+  },
+  {
+    "id": "ES51",
+    "name": "Cataluña",
+    "en": "Catalonia",
+    "lat": 41.591159,
+    "lon": 1.520862
+  },
+  {
+    "id": "ES52",
+    "name": "Comunidad Valenciana",
+    "en": "Valencia",
+    "lat": 39.469908,
+    "lon": -0.376288
+  },
+  {
+    "id": "ES53",
+    "name": "Illes Balears",
+    "en": "Balearic Islands",
+    "lat": 39.358776,
+    "lon": 2.735633
+  },
+  {
+    "id": "ES61",
+    "name": "Andalucía",
+    "en": "Andalusia",
+    "lat": 37.544271,
+    "lon": -4.727753
+  },
+  {
+    "id": "ES62",
+    "name": "Región de Murcia",
+    "en": "Murcia",
+    "lat": 37.99224,
+    "lon": -1.130654
+  },
+  {
+    "id": "ES63",
+    "name": "Ciudad Autónoma de Ceuta",
+    "en": "Ceuta",
+    "lat": 35.889387,
+    "lon": -5.321346
+  },
+  {
+    "id": "ES64",
+    "name": "Ciudad Autónoma de Melilla",
+    "en": "Melilla",
+    "lat": 35.292278,
+    "lon": -2.938097
+  },
+  {
+    "id": "ES70",
+    "name": "Canarias",
+    "en": "Canary Islands",
+    "lat": 28.291564,
+    "lon": -16.62913
+  },
+  {
+    "id": "FR10",
+    "name": "Île-de-France",
+    "en": "Île-de-France",
+    "lat": 48.84992,
+    "lon": 2.637041
+  },
+  {
+    "id": "FR21",
+    "name": "Champagne-Ardenne",
+    "en": "Champagne-Ardenne",
+    "lat": 48.793409,
+    "lon": 4.472525
+  },
+  {
+    "id": "FR22",
+    "name": "Picardie",
+    "en": "Picardie",
+    "lat": 49.663613,
+    "lon": 2.528073
+  },
+  {
+    "id": "FR23",
+    "name": "Haute-Normandie",
+    "en": "Upper Normandy",
+    "lat": 49.524641,
+    "lon": 0.882833
+  },
+  {
+    "id": "FR24",
+    "name": "Centre",
+    "en": "Centre",
+    "lat": 47.751569,
+    "lon": 1.675063
+  },
+  {
+    "id": "FR25",
+    "name": "Basse-Normandie",
+    "en": "Lower Normandy",
+    "lat": 48.878847,
+    "lon": -0.515749
+  },
+  {
+    "id": "FR26",
+    "name": "Bourgogne",
+    "en": "Burgundy",
+    "lat": 47.052505,
+    "lon": 4.383721
+  },
+  {
+    "id": "FR30",
+    "name": "Nord - Pas-de-Calais",
+    "en": "Nord/Pas-de-Calais",
+    "lat": 50.480115,
+    "lon": 2.793727
+  },
+  {
+    "id": "FR41",
+    "name": "Lorraine",
+    "en": "Lorraine",
+    "lat": 48.874423,
+    "lon": 6.208093
+  },
+  {
+    "id": "FR42",
+    "name": "Alsace",
+    "en": "Alsace",
+    "lat": 48.31818,
+    "lon": 7.441624
+  },
+  {
+    "id": "FR43",
+    "name": "Franche-Comté",
+    "en": "Franche-Comté",
+    "lat": 47.134321,
+    "lon": 6.022302
+  },
+  {
+    "id": "FR51",
+    "name": "Pays de la Loire",
+    "en": "Loire Region",
+    "lat": 47.763284,
+    "lon": -0.329969
+  },
+  {
+    "id": "FR52",
+    "name": "Bretagne",
+    "en": "Brittany",
+    "lat": 48.202047,
+    "lon": -2.932644
+  },
+  {
+    "id": "FR53",
+    "name": "Poitou-Charentes",
+    "en": "Poitou-Charentes",
+    "lat": 45.903552,
+    "lon": -0.309184
+  },
+  {
+    "id": "FR61",
+    "name": "Aquitaine",
+    "en": "Aquitaine",
+    "lat": 44.700222,
+    "lon": -0.299579
+  },
+  {
+    "id": "FR62",
+    "name": "Midi-Pyrénées",
+    "en": "Midi-Pyrénées",
+    "lat": 44.085943,
+    "lon": 1.520862
+  },
+  {
+    "id": "FR63",
+    "name": "Limousin",
+    "en": "Limousin",
+    "lat": 45.893223,
+    "lon": 1.569602
+  },
+  {
+    "id": "FR71",
+    "name": "Rhône-Alpes",
+    "en": "Rhône-Alpes",
+    "lat": 45.16958,
+    "lon": 5.450282
+  },
+  {
+    "id": "FR72",
+    "name": "Auvergne",
+    "en": "Auvergne",
+    "lat": 45.70327,
+    "lon": 3.344854
+  },
+  {
+    "id": "FR81",
+    "name": "Languedoc-Roussillon",
+    "en": "Languedoc-Roussillon",
+    "lat": 43.591236,
+    "lon": 3.258363
+  },
+  {
+    "id": "FR82",
+    "name": "Provence-Alpes-Côte d’Azur",
+    "en": "Provence-Alpes-Côte d’Azur",
+    "lat": 43.935169,
+    "lon": 6.067919
+  },
+  {
+    "id": "FR83",
+    "name": "Corse",
+    "en": "Corsica",
+    "lat": 42.039604,
+    "lon": 9.012893
+  },
+  {
+    "id": "FRA1",
+    "name": "Guadeloupe",
+    "en": "Guadeloupe",
+    "lat": 16.265,
+    "lon": -61.551
+  },
+  {
+    "id": "FRA2",
+    "name": "Martinique",
+    "en": "Martinique",
+    "lat": 14.641528,
+    "lon": -61.024174
+  },
+  {
+    "id": "FRA3",
+    "name": "Guyane",
+    "en": "French Guiana",
+    "lat": 3.933889,
+    "lon": -53.125782
+  },
+  {
+    "id": "FRA4",
+    "name": "La Réunion",
+    "en": "Réunion",
+    "lat": -21.115141,
+    "lon": 55.536384
+  },
+  {
+    "id": "FRA5",
+    "name": "Mayotte",
+    "en": "Mayotte",
+    "lat": -12.8275,
+    "lon": 45.166244
+  },
+  {
+    "id": "HR03",
+    "name": "Jadranska Hrvatska",
+    "en": "Adriatic Croatia",
+    "lat": 41.85509,
+    "lon": 17.290284
+  },
+  {
+    "id": "HR04",
+    "name": "Kontinentalna Hrvatska",
+    "en": "Continental Croatia",
+    "lat": 45.337932,
+    "lon": 14.308915
+  },
+  {
+    "id": "ITC1",
+    "name": "Piemonte",
+    "en": "Piedmont",
+    "lat": 45.052237,
+    "lon": 7.515388
+  },
+  {
+    "id": "ITC2",
+    "name": "Valle d’Aosta/Vallée d’Aoste",
+    "en": "Valle d’Aosta",
+    "lat": 45.738888,
+    "lon": 7.426187
+  },
+  {
+    "id": "ITC3",
+    "name": "Liguria",
+    "en": "Liguria",
+    "lat": 44.316792,
+    "lon": 8.396494
+  },
+  {
+    "id": "ITC4",
+    "name": "Lombardia",
+    "en": "Lombardy",
+    "lat": 45.479067,
+    "lon": 9.845243
+  },
+  {
+    "id": "ITF1",
+    "name": "Abruzzo",
+    "en": "Abruzzo",
+    "lat": 42.192012,
+    "lon": 13.728917
+  },
+  {
+    "id": "ITF2",
+    "name": "Molise",
+    "en": "Molise",
+    "lat": 41.673886,
+    "lon": 14.752094
+  },
+  {
+    "id": "ITF3",
+    "name": "Campania",
+    "en": "Campania",
+    "lat": 41.109947,
+    "lon": 14.847514
+  },
+  {
+    "id": "ITF4",
+    "name": "Puglia",
+    "en": "Apulia",
+    "lat": 40.792839,
+    "lon": 17.101193
+  },
+  {
+    "id": "ITF5",
+    "name": "Basilicata",
+    "en": "Basilicata",
+    "lat": 40.643077,
+    "lon": 15.969988
+  },
+  {
+    "id": "ITF6",
+    "name": "Calabria",
+    "en": "Calabria",
+    "lat": 39.308771,
+    "lon": 16.346379
+  },
+  {
+    "id": "ITG1",
+    "name": "Sicilia",
+    "en": "Sicily",
+    "lat": 37.599994,
+    "lon": 14.015356
+  },
+  {
+    "id": "ITG2",
+    "name": "Sardegna",
+    "en": "Sardinia",
+    "lat": 40.120875,
+    "lon": 9.012893
+  },
+  {
+    "id": "ITH1",
+    "name": "Provincia Autonoma di Bolzano/Bozen",
+    "en": "Autonomous Province of Bolzano",
+    "lat": 46.498295,
+    "lon": 11.354758
+  },
+  {
+    "id": "ITH2",
+    "name": "Provincia Autonoma di Trento",
+    "en": "Autonomous Province of Trento",
+    "lat": 46.074779,
+    "lon": 11.121749
+  },
+  {
+    "id": "ITH3",
+    "name": "Veneto",
+    "en": "Veneto",
+    "lat": 45.762333,
+    "lon": 11.690976
+  },
+  {
+    "id": "ITH4",
+    "name": "Friuli-Venezia Giulia",
+    "en": "Friuli-Venezia Giulia",
+    "lat": 46.225918,
+    "lon": 13.103365
+  },
+  {
+    "id": "ITH5",
+    "name": "Emilia-Romagna",
+    "en": "Emilia-Romagna",
+    "lat": 44.596761,
+    "lon": 11.21864
+  },
+  {
+    "id": "ITI1",
+    "name": "Toscana",
+    "en": "Tuscany",
+    "lat": 43.771051,
+    "lon": 11.248621
+  },
+  {
+    "id": "ITI2",
+    "name": "Umbria",
+    "en": "Umbria",
+    "lat": 42.938004,
+    "lon": 12.621621
+  },
+  {
+    "id": "ITI3",
+    "name": "Marche",
+    "en": "Marche",
+    "lat": 43.505874,
+    "lon": 12.989615
+  },
+  {
+    "id": "ITI4",
+    "name": "Lazio",
+    "en": "Lazio",
+    "lat": 41.655242,
+    "lon": 12.989615
+  },
+  {
+    "id": "CY00",
+    "name": "Κύπρος",
+    "en": "Cyprus",
+    "lat": 35.126413,
+    "lon": 33.429859
+  },
+  {
+    "id": "LV00",
+    "name": "Latvija",
+    "en": "Latvia",
+    "lat": 56.879635,
+    "lon": 24.603189
+  },
+  {
+    "id": "LT00",
+    "name": "Lietuva",
+    "en": "Lithuania",
+    "lat": 55.169438,
+    "lon": 23.881275
+  },
+  {
+    "id": "LU00",
+    "name": "Luxembourg",
+    "en": "Luxembourg",
+    "lat": 49.815273,
+    "lon": 6.129583
+  },
+  {
+    "id": "HU10",
+    "name": "Közép-Magyarország",
+    "en": "Central Hungary",
+    "lat": 47.448,
+    "lon": 19.461813
+  },
+  {
+    "id": "HU21",
+    "name": "Közép-Dunántúl",
+    "en": "Central Transdanubia",
+    "lat": 47.426883,
+    "lon": 18.15026
+  },
+  {
+    "id": "HU22",
+    "name": "Nyugat-Dunántúl",
+    "en": "West Transdanubia",
+    "lat": 47.208643,
+    "lon": 16.977244
+  },
+  {
+    "id": "HU23",
+    "name": "Dél-Dunántúl",
+    "en": "South Transdanubia",
+    "lat": 46.489217,
+    "lon": 17.996359
+  },
+  {
+    "id": "HU31",
+    "name": "Észak-Magyarország",
+    "en": "North Hungary",
+    "lat": 48.00331,
+    "lon": 20.473796
+  },
+  {
+    "id": "HU32",
+    "name": "Észak-Alföld",
+    "en": "North Great Plain",
+    "lat": 47.552301,
+    "lon": 21.116202
+  },
+  {
+    "id": "HU33",
+    "name": "Dél-Alföld",
+    "en": "South Great Plain",
+    "lat": 46.492289,
+    "lon": 19.841859
+  },
+  {
+    "id": "MT00",
+    "name": "Malta",
+    "en": "Malta",
+    "lat": 35.937496,
+    "lon": 14.375416
+  },
+  {
+    "id": "NL11",
+    "name": "Groningen",
+    "en": "Groningen",
+    "lat": 53.219384,
+    "lon": 6.566502
+  },
+  {
+    "id": "NL12",
+    "name": "Friesland (NL)",
+    "en": "Friesland (NL)",
+    "lat": 53.164164,
+    "lon": 5.781754
+  },
+  {
+    "id": "NL13",
+    "name": "Drenthe",
+    "en": "Drenthe",
+    "lat": 52.947601,
+    "lon": 6.623059
+  },
+  {
+    "id": "NL21",
+    "name": "Overijssel",
+    "en": "Overijssel",
+    "lat": 52.438781,
+    "lon": 6.501641
+  },
+  {
+    "id": "NL22",
+    "name": "Gelderland",
+    "en": "Gelderland",
+    "lat": 52.045155,
+    "lon": 5.871824
+  },
+  {
+    "id": "NL23",
+    "name": "Flevoland",
+    "en": "Flevoland",
+    "lat": 52.527978,
+    "lon": 5.595351
+  },
+  {
+    "id": "NL31",
+    "name": "Utrecht",
+    "en": "Utrecht",
+    "lat": 52.090737,
+    "lon": 5.12142
+  },
+  {
+    "id": "NL32",
+    "name": "Noord-Holland",
+    "en": "North Holland",
+    "lat": 52.520587,
+    "lon": 4.788474
+  },
+  {
+    "id": "NL33",
+    "name": "Zuid-Holland",
+    "en": "South Holland",
+    "lat": 52.020798,
+    "lon": 4.493784
+  },
+  {
+    "id": "NL34",
+    "name": "Zeeland",
+    "en": "Zeeland",
+    "lat": 51.494031,
+    "lon": 3.849681
+  },
+  {
+    "id": "NL41",
+    "name": "Noord-Brabant",
+    "en": "North Brabant",
+    "lat": 51.482654,
+    "lon": 5.232169
+  },
+  {
+    "id": "NL42",
+    "name": "Limburg (NL)",
+    "en": "Limburg",
+    "lat": 51.442724,
+    "lon": 6.060873
+  },
+  {
+    "id": "AT11",
+    "name": "Burgenland",
+    "en": "Burgenland",
+    "lat": 47.153716,
+    "lon": 16.26888
+  },
+  {
+    "id": "AT12",
+    "name": "Niederösterreich",
+    "en": "Lower Austria",
+    "lat": 48.108077,
+    "lon": 15.804956
+  },
+  {
+    "id": "AT13",
+    "name": "Wien",
+    "en": "Vienna",
+    "lat": 48.208174,
+    "lon": 16.373819
+  },
+  {
+    "id": "AT21",
+    "name": "Kärnten",
+    "en": "Carinthia",
+    "lat": 46.722203,
+    "lon": 14.180588
+  },
+  {
+    "id": "AT22",
+    "name": "Steiermark",
+    "en": "Styria",
+    "lat": 47.359344,
+    "lon": 14.469983
+  },
+  {
+    "id": "AT31",
+    "name": "Oberösterreich",
+    "en": "Upper Austria",
+    "lat": 48.025854,
+    "lon": 13.972367
+  },
+  {
+    "id": "AT32",
+    "name": "Salzburg",
+    "en": "Salzburg",
+    "lat": 47.80949,
+    "lon": 13.05501
+  },
+  {
+    "id": "AT33",
+    "name": "Tirol",
+    "en": "The Tyrol",
+    "lat": 47.253741,
+    "lon": 11.601487
+  },
+  {
+    "id": "AT34",
+    "name": "Vorarlberg",
+    "en": "Vorarlberg",
+    "lat": 47.249743,
+    "lon": 9.979737
+  },
+  {
+    "id": "PL11",
+    "name": "Łódzkie",
+    "en": "Łódzkie",
+    "lat": 51.759249,
+    "lon": 19.455983
+  },
+  {
+    "id": "PL12",
+    "name": "Mazowieckie",
+    "en": "Mazowieckie",
+    "lat": 51.892718,
+    "lon": 21.002168
+  },
+  {
+    "id": "PL21",
+    "name": "Małopolskie",
+    "en": "Małopolskie",
+    "lat": 49.722531,
+    "lon": 20.250336
+  },
+  {
+    "id": "PL22",
+    "name": "Śląskie",
+    "en": "Śląskie",
+    "lat": 50.57166,
+    "lon": 19.321977
+  },
+  {
+    "id": "PL31",
+    "name": "Lubelskie",
+    "en": "Lubelskie",
+    "lat": 51.249352,
+    "lon": 23.101139
+  },
+  {
+    "id": "PL32",
+    "name": "Podkarpackie",
+    "en": "Podkarpackie",
+    "lat": 50.057475,
+    "lon": 22.089569
+  },
+  {
+    "id": "PL33",
+    "name": "Świętokrzyskie",
+    "en": "Świętokrzyskie",
+    "lat": 50.626104,
+    "lon": 20.940628
+  },
+  {
+    "id": "PL34",
+    "name": "Podlaskie",
+    "en": "Podlaskie",
+    "lat": 53.069716,
+    "lon": 22.967464
+  },
+  {
+    "id": "PL41",
+    "name": "Wielkopolskie",
+    "en": "Wielkopolskie",
+    "lat": 52.279986,
+    "lon": 17.352294
+  },
+  {
+    "id": "PL42",
+    "name": "Zachodniopomorskie",
+    "en": "Zachodniopomorskie",
+    "lat": 53.465789,
+    "lon": 15.182258
+  },
+  {
+    "id": "PL43",
+    "name": "Lubuskie",
+    "en": "Lubuskie",
+    "lat": 52.227461,
+    "lon": 15.25591
+  },
+  {
+    "id": "PL51",
+    "name": "Dolnośląskie",
+    "en": "Dolnośląskie",
+    "lat": 51.133986,
+    "lon": 16.884196
+  },
+  {
+    "id": "PL52",
+    "name": "Opolskie",
+    "en": "Opolskie",
+    "lat": 50.800376,
+    "lon": 17.937989
+  },
+  {
+    "id": "PL61",
+    "name": "Kujawsko-Pomorskie",
+    "en": "Kujawsko-Pomorskie",
+    "lat": 53.164836,
+    "lon": 18.483422
+  },
+  {
+    "id": "PL62",
+    "name": "Warmińsko-Mazurskie",
+    "en": "Warmińsko-Mazurskie",
+    "lat": 53.867112,
+    "lon": 20.702786
+  },
+  {
+    "id": "PL63",
+    "name": "Pomorskie",
+    "en": "Pomorskie",
+    "lat": 54.294425,
+    "lon": 18.153116
+  },
+  {
+    "id": "PT11",
+    "name": "Norte",
+    "en": "North",
+    "lat": 41.36092,
+    "lon": -7.438136
+  },
+  {
+    "id": "PT15",
+    "name": "Algarve",
+    "en": "Algarve",
+    "lat": 37.017954,
+    "lon": -7.930834
+  },
+  {
+    "id": "PT16",
+    "name": "Centro (PT)",
+    "en": "Centre",
+    "lat": 43.590058,
+    "lon": -79.723665
+  },
+  {
+    "id": "PT17",
+    "name": "Área Metropolitana de Lisboa",
+    "en": "Lisbon",
+    "lat": 38.722252,
+    "lon": -9.139337
+  },
+  {
+    "id": "PT18",
+    "name": "Alentejo",
+    "en": "Alentejo",
+    "lat": 39.427756,
+    "lon": -7.385685
+  },
+  {
+    "id": "PT20",
+    "name": "Região Autónoma dos Açores",
+    "en": "Azores",
+    "lat": 37.741249,
+    "lon": -25.675594
+  },
+  {
+    "id": "PT30",
+    "name": "Região Autónoma da Madeira",
+    "en": "Madeira",
+    "lat": 32.760707,
+    "lon": -16.959472
+  },
+  {
+    "id": "RO11",
+    "name": "Nord-Vest",
+    "en": "North-West",
+    "lat": 45.943161,
+    "lon": 24.96676
+  },
+  {
+    "id": "RO12",
+    "name": "Centru",
+    "en": "Centre",
+    "lat": 45.985583,
+    "lon": 24.685652
+  },
+  {
+    "id": "RO21",
+    "name": "Nord-Est",
+    "en": "North-East",
+    "lat": 46.962303,
+    "lon": 26.770646
+  },
+  {
+    "id": "RO22",
+    "name": "Sud-Est",
+    "en": "South-East",
+    "lat": 45.016877,
+    "lon": 27.942385
+  },
+  {
+    "id": "RO31",
+    "name": "Sud – Muntenia",
+    "en": "South-Muntenia",
+    "lat": 44.856613,
+    "lon": 24.872409
+  },
+  {
+    "id": "RO32",
+    "name": "Bucureşti – Ilfov",
+    "en": "Bucharest-Ilfov",
+    "lat": 44.426767,
+    "lon": 26.102538
+  },
+  {
+    "id": "RO41",
+    "name": "Sud-Vest Oltenia",
+    "en": "South-West Oltenia",
+    "lat": 44.330179,
+    "lon": 23.794881
+  },
+  {
+    "id": "RO42",
+    "name": "Vest",
+    "en": "West",
+    "lat": 45.644031,
+    "lon": 21.791447
+  },
+  {
+    "id": "SI03",
+    "name": "Vzhodna Slovenija",
+    "en": "East Slovenia",
+    "lat": 46.151241,
+    "lon": 14.995463
+  },
+  {
+    "id": "SI04",
+    "name": "Zahodna Slovenija",
+    "en": "West Slovenia",
+    "lat": 46.151241,
+    "lon": 14.995463
+  },
+  {
+    "id": "SK01",
+    "name": "Bratislavský kraj",
+    "en": "Bratislava",
+    "lat": 48.148597,
+    "lon": 17.107748
+  },
+  {
+    "id": "SK02",
+    "name": "Západné Slovensko",
+    "en": "West Slovakia",
+    "lat": 48.669026,
+    "lon": 19.699024
+  },
+  {
+    "id": "SK03",
+    "name": "Stredné Slovensko",
+    "en": "Central Slovakia",
+    "lat": 48.383201,
+    "lon": 20.037369
+  },
+  {
+    "id": "SK04",
+    "name": "Východné Slovensko",
+    "en": "East Slovakia",
+    "lat": 48.669026,
+    "lon": 19.699024
+  },
+  {
+    "id": "FI19",
+    "name": "Länsi-Suomi",
+    "en": "West Finland",
+    "lat": 62.715155,
+    "lon": 23.686445
+  },
+  {
+    "id": "FI1B",
+    "name": "Helsinki-Uusimaa",
+    "en": "Helsinki-Uusimaa",
+    "lat": 60.169856,
+    "lon": 24.938379
+  },
+  {
+    "id": "FI1C",
+    "name": "Etelä-Suomi",
+    "en": "South Finland",
+    "lat": 60.362791,
+    "lon": 22.443937
+  },
+  {
+    "id": "FI1D",
+    "name": "Pohjois- ja Itä-Suomi",
+    "en": "North and East Finland",
+    "lat": 61.92411,
+    "lon": 25.748151
+  },
+  {
+    "id": "FI20",
+    "name": "Åland",
+    "en": "Åland Islands",
+    "lat": 60.178525,
+    "lon": 19.91561
+  },
+  {
+    "id": "SE11",
+    "name": "Stockholm",
+    "en": "Stockholm",
+    "lat": 59.329323,
+    "lon": 18.068581
+  },
+  {
+    "id": "SE12",
+    "name": "Östra Mellansverige",
+    "en": "East-Central Sweden",
+    "lat": 59.367047,
+    "lon": 17.966309
+  },
+  {
+    "id": "SE21",
+    "name": "Småland med öarna",
+    "en": "Småland and islands",
+    "lat": 56.893023,
+    "lon": 14.787791
+  },
+  {
+    "id": "SE22",
+    "name": "Sydsverige",
+    "en": "South Sweden",
+    "lat": 55.744004,
+    "lon": 13.131738
+  },
+  {
+    "id": "SE23",
+    "name": "Västsverige",
+    "en": "West Sweden",
+    "lat": 58.304443,
+    "lon": 11.701096
+  },
+  {
+    "id": "SE31",
+    "name": "Norra Mellansverige",
+    "en": "North-Central Sweden",
+    "lat": 59.367047,
+    "lon": 17.966309
+  },
+  {
+    "id": "SE32",
+    "name": "Mellersta Norrland",
+    "en": "Central Norrland",
+    "lat": 62.916356,
+    "lon": 17.882811
+  },
+  {
+    "id": "SE33",
+    "name": "Övre Norrland",
+    "en": "Upper Norrland",
+    "lat": 62.916356,
+    "lon": 17.882811
+  },
+  {
+    "id": "UKC1",
+    "name": "Tees Valley and Durham",
+    "en": "Tees Valley and Durham",
+    "lat": 54.865494,
+    "lon": -1.69365
+  },
+  {
+    "id": "UKC2",
+    "name": "Northumberland and Tyne and Wear",
+    "en": "Northumberland and Tyne and Wear",
+    "lat": 55.006259,
+    "lon": -1.634725
+  },
+  {
+    "id": "UKD1",
+    "name": "Cumbria",
+    "en": "Cumbria",
+    "lat": 54.577232,
+    "lon": -2.797483
+  },
+  {
+    "id": "UKD3",
+    "name": "Greater Manchester",
+    "en": "Greater Manchester",
+    "lat": 53.457596,
+    "lon": -2.157838
+  },
+  {
+    "id": "UKD4",
+    "name": "Lancashire",
+    "en": "Lancashire",
+    "lat": 53.763225,
+    "lon": -2.704405
+  },
+  {
+    "id": "UKD6",
+    "name": "Cheshire",
+    "en": "Cheshire",
+    "lat": 53.232634,
+    "lon": -2.610316
+  },
+  {
+    "id": "UKD7",
+    "name": "Merseyside",
+    "en": "Merseyside",
+    "lat": 53.397604,
+    "lon": -2.943664
+  },
+  {
+    "id": "UKE1",
+    "name": "East Yorkshire and Northern Lincolnshire",
+    "en": "East Yorkshire and Northern Lincolnshire",
+    "lat": 53.587458,
+    "lon": -0.666938
+  },
+  {
+    "id": "UKE2",
+    "name": "North Yorkshire",
+    "en": "North Yorkshire",
+    "lat": 53.991503,
+    "lon": -1.541201
+  },
+  {
+    "id": "UKE3",
+    "name": "South Yorkshire",
+    "en": "South Yorkshire",
+    "lat": 53.469697,
+    "lon": -1.325968
+  },
+  {
+    "id": "UKE4",
+    "name": "West Yorkshire",
+    "en": "West Yorkshire",
+    "lat": 53.810818,
+    "lon": -1.76261
+  },
+  {
+    "id": "UKF1",
+    "name": "Derbyshire and Nottinghamshire",
+    "en": "Derbyshire and Nottinghamshire",
+    "lat": 53.263874,
+    "lon": -1.439045
+  },
+  {
+    "id": "UKF2",
+    "name": "Leicestershire, Rutland and Northamptonshire",
+    "en": "Leicestershire, Rutland and Northamptonshire",
+    "lat": 52.583961,
+    "lon": -1.141094
+  },
+  {
+    "id": "UKF3",
+    "name": "Lincolnshire",
+    "en": "Lincolnshire",
+    "lat": 52.945189,
+    "lon": -0.160125
+  },
+  {
+    "id": "UKG1",
+    "name": "Herefordshire, Worcestershire and Warwickshire",
+    "en": "Herefordshire, Worcestershire and Warwickshire",
+    "lat": 52.325784,
+    "lon": -1.983281
+  },
+  {
+    "id": "UKG2",
+    "name": "Shropshire and Staffordshire",
+    "en": "Shropshire and Staffordshire",
+    "lat": 52.810445,
+    "lon": -2.110122
+  },
+  {
+    "id": "UKG3",
+    "name": "West Midlands",
+    "en": "West Midlands",
+    "lat": 52.475074,
+    "lon": -1.829833
+  },
+  {
+    "id": "UKH1",
+    "name": "East Anglia",
+    "en": "East Anglia",
+    "lat": 52.355518,
+    "lon": -1.17432
+  },
+  {
+    "id": "UKH2",
+    "name": "Bedfordshire and Hertfordshire",
+    "en": "Bedfordshire and Hertfordshire",
+    "lat": 52.132419,
+    "lon": -0.465846
+  },
+  {
+    "id": "UKH3",
+    "name": "Essex",
+    "en": "Essex",
+    "lat": 51.734331,
+    "lon": 0.469089
+  },
+  {
+    "id": "UKI3",
+    "name": "Inner London — West",
+    "en": "Inner London — West",
+    "lat": 51.514593,
+    "lon": -0.125225
+  },
+  {
+    "id": "UKI4",
+    "name": "Inner London — East",
+    "en": "Inner London — East",
+    "lat": 51.487964,
+    "lon": -0.123724
+  },
+  {
+    "id": "UKI5",
+    "name": "Outer London — East and North East",
+    "en": "Outer London — East and North East",
+    "lat": 51.507351,
+    "lon": -0.127758
+  },
+  {
+    "id": "UKI6",
+    "name": "Outer London — South",
+    "en": "Outer London — South",
+    "lat": 51.526842,
+    "lon": -0.160619
+  },
+  {
+    "id": "UKI7",
+    "name": "Outer London — West and North West",
+    "en": "Outer London — West and North West",
+    "lat": 51.507351,
+    "lon": -0.127758
+  },
+  {
+    "id": "UKJ1",
+    "name": "Berkshire, Buckinghamshire and Oxfordshire",
+    "en": "Berkshire, Buckinghamshire and Oxfordshire",
+    "lat": 51.716992,
+    "lon": -1.227464
+  },
+  {
+    "id": "UKJ2",
+    "name": "Surrey, East and West Sussex",
+    "en": "Surrey, East and West Sussex",
+    "lat": 51.136524,
+    "lon": 0.009689
+  },
+  {
+    "id": "UKJ3",
+    "name": "Hampshire and Isle of Wight",
+    "en": "Hampshire and Isle of Wight",
+    "lat": 50.918456,
+    "lon": -1.256496
+  },
+  {
+    "id": "UKJ4",
+    "name": "Kent",
+    "en": "Kent",
+    "lat": 51.278708,
+    "lon": 0.521725
+  },
+  {
+    "id": "UKK1",
+    "name": "Gloucestershire, Wiltshire and Bristol/Bath area",
+    "en": "Gloucestershire, Wiltshire and Bristol/Bath area",
+    "lat": 51.864211,
+    "lon": -2.238034
+  },
+  {
+    "id": "UKK2",
+    "name": "Dorset and Somerset",
+    "en": "Dorset and Somerset",
+    "lat": 51.122659,
+    "lon": -2.984046
+  },
+  {
+    "id": "UKK3",
+    "name": "Cornwall and Isles of Scilly",
+    "en": "Cornwall and Isles of Scilly",
+    "lat": 49.936111,
+    "lon": -6.322778
+  },
+  {
+    "id": "UKK4",
+    "name": "Devon",
+    "en": "Devon",
+    "lat": 50.715559,
+    "lon": -3.530875
+  },
+  {
+    "id": "UKL1",
+    "name": "West Wales and The Valleys",
+    "en": "West Wales and The Valleys",
+    "lat": 53.282866,
+    "lon": -4.559513
+  },
+  {
+    "id": "UKL2",
+    "name": "East Wales",
+    "en": "East Wales",
+    "lat": 52.130661,
+    "lon": -3.783712
+  },
+  {
+    "id": "UKM2",
+    "name": "Eastern Scotland",
+    "en": "Eastern Scotland",
+    "lat": 55.958674,
+    "lon": -2.774864
+  },
+  {
+    "id": "UKM3",
+    "name": "South Western Scotland",
+    "en": "South Western Scotland",
+    "lat": 55.830929,
+    "lon": -4.033653
+  },
+  {
+    "id": "UKM5",
+    "name": "North Eastern Scotland",
+    "en": "North Eastern Scotland",
+    "lat": 57.15199,
+    "lon": -2.100255
+  },
+  {
+    "id": "UKM6",
+    "name": "Highlands and Islands",
+    "en": "Highlands and Islands",
+    "lat": 57.474915,
+    "lon": -4.182704
+  },
+  {
+    "id": "UKN0",
+    "name": "Northern Ireland",
+    "en": "Northern Ireland",
+    "lat": 54.787715,
+    "lon": -6.492315
+  }
+]

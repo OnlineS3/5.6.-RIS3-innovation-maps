@@ -1,0 +1,98 @@
+[
+ {
+   "id": "1",
+   "name": "Exploration and Exploitation of the Earth"
+ },
+ {
+   "id": "2",
+   "name": "Environment"
+ },
+ {
+   "id": "3",
+   "name": "Exploration and Exploitation of Space"
+ },
+ {
+   "id": "4",
+   "name": "Transport, Telecommunication and other Infrastructures"
+ },
+ {
+   "id": "5",
+   "name": "Energy"
+ },
+ {
+   "id": "6",
+   "name": "Industrial Production and Technology"
+ },
+ {
+   "id": "7",
+   "name": "Health"
+ },
+ {
+   "id": "8",
+   "name": "Agriculture"
+ },
+ {
+   "id": "9",
+   "name": "Education"
+ },
+ {
+   "id": "10",
+   "name": "Culture, Recreation, Religion and Mass Media"
+ },
+ {
+   "id": "11",
+   "name": "Political and Social Systems, Structures and Processes"
+ },
+ {
+   "id": "12.1",
+   "name": "R&D related to Natural Sciences - Financed from GUF"
+ },
+ {
+   "id": "12.2",
+   "name": "R&D related to Engineering Sciences - Financed from GUF"
+ },
+ {
+   "id": "12.3",
+   "name": "R&D related to Medical Sciences - Financed from GUF"
+ },
+ {
+   "id": "12.4",
+   "name": "R&D related to Agricultural Sciences - Financed from GUF"
+ },
+ {
+   "id": "12.5",
+   "name": "R&D related to Social Sciences - Financed from GUF"
+ },
+ {
+   "id": "12.6",
+   "name": "R&D related to Humanities - Financed from GUF"
+ },
+ {
+   "id": "13.1",
+   "name": "R&D related to Natural Sciences - Financed from other sources than GUF"
+ },
+ {
+   "id": "13.2",
+   "name": "R&D related to Engineering Sciences - Financed from other sources than GUF"
+ },
+ {
+   "id": "13.3",
+   "name": "R&D related to Medical Sciences - Financed from other sources than GUF"
+ },
+ {
+   "id": "13.4",
+   "name": "R&D related to Agricultural Sciences - Financed from other sources than GUF"
+ },
+ {
+   "id": "13.5",
+   "name": "R&D related to Social Sciences - Financed from other sources than GUF"
+ },
+ {
+   "id": "13.6",
+   "name": "R&D related to Humanities - Financed from other sources than GUF"
+ },
+ {
+   "id": "14",
+   "name": "Defence"
+ }
+]

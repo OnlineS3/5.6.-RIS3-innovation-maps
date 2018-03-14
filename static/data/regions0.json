@@ -1,0 +1,197 @@
+[{
+		"id": "AT",
+		"name": "Österreich",
+		"en": "Austria",
+		"lat": 47.516231,
+		"lon": 14.550072
+	},
+	{
+		"id": "BE",
+		"name": "Belgique-België",
+		"en": "Belgium",
+		"lat": 50.503887,
+		"lon": 4.469936
+	},
+	{
+		"id": "BG",
+		"name": "България",
+		"en": "Bulgaria",
+		"lat": 42.733883,
+		"lon": 25.48583
+	},
+	{
+		"id": "CY",
+		"name": "Κυπροσ",
+		"en": "Cyprus",
+		"lat": 35.126413,
+		"lon": 33.429859
+	},
+	{
+		"id": "CZ",
+		"name": "Česká Republika",
+		"en": "Czech Republic",
+		"lat": 49.817492,
+		"lon": 15.472962
+	},
+	{
+		"id": "DE",
+		"name": "Deutschland",
+		"en": "Germany",
+		"lat": 51.165691,
+		"lon": 10.451526
+	},
+	{
+		"id": "DK",
+		"name": "Danmark",
+		"en": "Denmark",
+		"lat": 56.26392,
+		"lon": 9.501785
+	},
+	{
+		"id": "EE",
+		"name": "Eesti",
+		"en": "Estonia",
+		"lat": 58.595272,
+		"lon": 25.013607
+	},
+	{
+		"id": "EL",
+		"name": "Ελληνική Δημοκρατία",
+		"en": "Greece",
+		"lat": 39.074208,
+		"lon": 21.824312
+	},
+	{
+		"id": "ES",
+		"name": "España",
+		"en": "Spain",
+		"lat": 40.463667,
+		"lon": -3.74922
+	},
+	{
+		"id": "FI",
+		"name": "Suomi",
+		"en": "Finland",
+		"lat": 61.92411,
+		"lon": 25.748151
+	},
+	{
+		"id": "FR",
+		"name": "France",
+		"en": "France",
+		"lat": 46.227638,
+		"lon": 2.213749
+	},
+	{
+		"id": "HR",
+		"name": "Hrvatska",
+		"en": "Croatia",
+		"lat": 45.1,
+		"lon": 15.2
+	},
+	{
+		"id": "HU",
+		"name": "Magyarország",
+		"en": "Hungary",
+		"lat": 47.162494,
+		"lon": 19.503304
+	},
+	{
+		"id": "IE",
+		"name": "Ireland",
+		"en": "Ireland",
+		"lat": 53.142367,
+		"lon": -7.692054
+	},
+	{
+		"id": "IT",
+		"name": "Italia",
+		"en": "Italy",
+		"lat": 41.87194,
+		"lon": 12.56738
+	},
+	{
+		"id": "LT",
+		"name": "Lietuva",
+		"en": "Lithuania",
+		"lat": 55.169438,
+		"lon": 23.881275
+	},
+	{
+		"id": "LU",
+		"name": "Luxembourg",
+		"en": "Luxembourg",
+		"lat": 49.815273,
+		"lon": 6.129583
+	},
+	{
+		"id": "LV",
+		"name": "Latvija",
+		"en": "Latvia",
+		"lat": 56.879635,
+		"lon": 24.603189
+	},
+	{
+		"id": "MT",
+		"name": "Malta",
+		"en": "Malta",
+		"lat": 35.937496,
+		"lon": 14.375416
+	},
+	{
+		"id": "NL",
+		"name": "Nederland",
+		"en": "Netherlands",
+		"lat": 52.132633,
+		"lon": 5.291266
+	},
+	{
+		"id": "PL",
+		"name": "Polska",
+		"en": "Poland",
+		"lat": 51.919438,
+		"lon": 19.145136
+	},
+	{
+		"id": "PT",
+		"name": "Portugal",
+		"en": "Portugal",
+		"lat": 39.399872,
+		"lon": -8.224454
+	},
+	{
+		"id": "RO",
+		"name": "România",
+		"en": "Romania",
+		"lat": 45.943161,
+		"lon": 24.96676
+	},
+	{
+		"id": "SE",
+		"name": "Sverige",
+		"en": "Sweden",
+		"lat": 60.128161,
+		"lon": 18.643501
+	},
+	{
+		"id": "SI",
+		"name": "Slovenija",
+		"en": "Slovenia",
+		"lat": 46.151241,
+		"lon": 14.995463
+	},
+	{
+		"id": "SK",
+		"name": "Slovenská Republika",
+		"en": "Slovakia",
+		"lat": 48.669026,
+		"lon": 19.699024
+	},
+	{
+		"id": "UK",
+		"name": "United Kingdom",
+		"en": "United Kingdom",
+		"lat": 55.378051,
+		"lon": -3.435973
+	}
+]

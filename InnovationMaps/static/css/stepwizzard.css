@@ -1,0 +1,50 @@
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-row {
+    display: inline-flex;
+    width:100%;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+
+.stepwizard-step {
+    width:33%;
+    text-align: -webkit-center;
+}
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.stepwizard-step.active a {
+    background-color: #2e64aa;
+    color: white;
+}
+.stepwizard-step.active p {
+    display: block;
+}
+
+.stepwizard-step a i {
+    text-indent: initial;
+    vertical-align: top;
+}
